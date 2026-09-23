@@ -1,0 +1,19 @@
+{
+  "diagram_type": "architecture",
+  "output": "practica02/index.html",
+  "specification_sha256": "10c6b24160e6fe53d0ec95556c20d859d8302c888632e6a3f1ad695d4da8904d",
+  "archify_artifact_sha256": "6f48d88b51fa6fface2211177a39c6a13125233698d741bd3b8da041b9f4e989",
+  "dashboard_sha256": "0d48ac4669bf624e04ac7f9a8c47c86344282110227bd43e0c959ea82e1b6775",
+  "validation": "9/9 showcase; 0 errors; 0 warnings (embedded Archify foundation)",
+  "browser_evidence": "passed",
+  "visual_review": "passed",
+  "correction_rounds": 1,
+  "dashboard_checks": "See dashboard-check.json. Desktop containment at 1440x900, 1600x1000, 1920x1080 and 2048x1320; mobile horizontal containment at 390x844.",
+  "notes": [
+    "index.html contains its CSS, JavaScript, SVG and an embedded copy of the validated Archify viewer. No runtime network dependencies.",
+    "Custom dashboard enriches the compact Archify overview with explicit token, return and orchestration flows.",
+    "Leaflet is a rendering library grouped with map content services, not a database peer."
+  ],
+  "language": "es",
+  "localization_note": "Panel, flujos, componentes y contenido Archify en espa?ol. La interfaz nativa y html lang del visor Archify usan ingl?s porque su motor no admite espa?ol."
+}

@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "artifact_sha256": "0d48ac4669bf624e04ac7f9a8c47c86344282110227bd43e0c959ea82e1b6775",
+  "bytes": 1137568,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 900
+    },
+    {
+      "width": 1600,
+      "height": 1000,
+      "scrollWidth": 1600,
+      "scrollHeight": 1000
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080
+    },
+    {
+      "width": 2048,
+      "height": 1320,
+      "scrollWidth": 2048,
+      "scrollHeight": 1320
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 968
+    }
+  ],
+  "checks": [
+    "four guided flows",
+    "flow stepping",
+    "component inspector",
+    "downstream traversal",
+    "infrastructure toggle",
+    "zoom and fit",
+    "pointer node dragging and edge updates",
+    "embedded Archify viewer"
+  ]
+}

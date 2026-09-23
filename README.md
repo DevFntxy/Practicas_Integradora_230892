@@ -1,61 +1,23 @@
-# Practicas_Integradora_230892
+# Repositorio de prácticas - Integradora
 
-## Link web
+## 🎯 Presentación
 
-https://devfntxy.github.io/Practicas_Integradora_230892/
+Este repositorio reúne las actividades desarrolladas en la materia de **Integradora**, con enfoque en la construcción de soluciones de software mediante herramientas, documentación y diseño arquitectónico.
 
-## Descripción del proyecto
+Materia: Integradora
+Carrera: Ingeniería en Desarrollo y Gestión de Software
+Docente: M.T.I. Marco A. Ramírez Hernández
+Periodo: Septiembre - Diciembre
 
-Este proyecto contiene una página web interactiva que representa la arquitectura de una plataforma basada en Flutter, con elementos de autenticación, backend, almacenamiento de datos y servicios externos. La visualización se implementó en HTML, CSS y JavaScript, y presenta un diagrama técnico con nodos, flujos y límites de confianza.
+## 📚 Prácticas realizadas
 
-## ¿Qué incluye la página?
+| # | Nombre | Descripción | Enlaces | Estatus |
+| --- | --- | --- | --- | --- |
+| 01 | Metodología de evaluación de la materia | Revisión de la forma en que se evaluará la materia durante el cuatrimestre. | — | Completada ✅ |
+| 02 | [Práctica 02 - Boceto de arquitectura con Archify](Practica02/README.md) | Diseño de una arquitectura interactiva con Archify, incluyendo backend, autenticación, bases de datos, servicios externos e infraestructura. | [README](Practica02/README.md) · [Reporte](Practica02/docs/ManualnstalacionyPront.pdf) · [Web](https://devfntxy.github.io/diagramweb/) | Completada ✅ |
+| 03 | Práctica 03 - Boceto de Modelo Canvas con Archify | El estudiante realizará un prompt para solicitar el modelo business canvas de una herramienta multiplataforma que use en su vida cotidiana. | — | Completada ✅ |
 
-La interfaz desarrollada en [index.html](index.html) muestra una arquitectura de sistema con los siguientes componentes:
+## 📝 Objetivo general
 
-- Flutter Mobile App: cliente móvil para iOS y Android.
-- Keycloak: servicio de autenticación y autorización con OIDC / OAuth 2.0.
-- FastAPI REST API: capa de lógica de negocio y conexión con bases de datos.
-- PostgreSQL: base de datos relacional.
-- MongoDB: base de datos documental.
-- Leaflet / Maps: servicio externo de mapas y geolocalización.
-- Docker + Docker Compose: infraestructura local de desarrollo.
-- Git + GitHub: control de versiones y colaboración.
+Desarrollar competencias en diseño, análisis y documentación de arquitecturas de software, utilizando herramientas modernas para representar sistemas reales de manera clara y visual.
 
-## Funcionalidades visuales
-
-El diagrama incluye varias funciones interactivas para facilitar la exploración:
-
-- Selección de cada componente para mostrar información detallada.
-- Mostrar u ocultar flujos de datos y límites de confianza.
-- Zoom in / zoom out.
-- Reinicio de la vista.
-- Arrastre del diagrama para desplazarse por la pantalla.
-- Diseño responsive para distintas resoluciones.
-
-## Estructura del diagrama
-
-La página divide la arquitectura en varias zonas:
-
-- Límite público / móvil
-- Límite del backend
-- Límite de terceros
-- Infraestructura de desarrollo
-
-Esto ayuda a identificar claramente qué servicios son internos, qué elementos dependen de proveedores externos y cómo se comunican entre sí.
-
-## Tecnologías usadas
-
-- HTML5
-- CSS3
-- JavaScript
-- SVG para la representación del diagrama
-
-## Cómo visualizarlo
-
-1. Abre el archivo [index.html](index.html) en tu navegador.
-2. Explora los elementos del diagrama haciendo clic sobre cada nodo.
-3. Utiliza los botones de zoom y el arrastre para navegar por la arquitectura.
-
-## Objetivo
-
-El objetivo de esta práctica es documentar visualmente una arquitectura de software, mostrando la relación entre front-end, autenticación, API, bases de datos y servicios externos en un formato claro y didáctico.

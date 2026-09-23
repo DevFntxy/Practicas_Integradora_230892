@@ -1,15 +1,17 @@
 # Repositorio de prácticas - Integradora
 
-## 🎯 Presentación
+
+## Informacion de la materia
+Materia: Integradora
+Carrera: Ingeniería en Desarrollo y Gestión de Software <br>
+Docente: M.T.I. Marco A. Ramírez Hernández <br>
+Periodo: Septiembre - Diciembre
+
+## Presentación
 
 Este repositorio reúne las actividades desarrolladas en la materia de **Integradora**, con enfoque en la construcción de soluciones de software mediante herramientas, documentación y diseño arquitectónico.
 
-Materia: Integradora
-Carrera: Ingeniería en Desarrollo y Gestión de Software
-Docente: M.T.I. Marco A. Ramírez Hernández
-Periodo: Septiembre - Diciembre
-
-## 📚 Prácticas realizadas
+##  Prácticas realizadas
 
 | # | Nombre | Descripción | Enlaces | Estatus |
 | --- | --- | --- | --- | --- |

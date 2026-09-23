@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Plataforma geoespacial",
+    "quality_profile": "showcase",
+    "animation": "trace",
+    "viewBox": [
+      1310,
+      650
+    ],
+    "views": [
+      {
+        "id": "auth",
+        "label": "Flujo de autenticación",
+        "focus": [
+          "user",
+          "flutter",
+          "keycloak",
+          "api"
+        ],
+        "note": "OIDC con PKCE devuelve un JWT; FastAPI valida firma, emisor, audiencia, caducidad y autorización."
+      },
+      {
+        "id": "request",
+        "label": "Flujo de solicitudes API",
+        "focus": [
+          "flutter",
+          "api",
+          "postgres",
+          "mongo"
+        ],
+        "note": "Las solicitudes REST protegidas acceden a los datos persistentes solo mediante FastAPI."
+      },
+      {
+        "id": "geo",
+        "label": "Flujo de geolocalización",
+        "focus": [
+          "flutter",
+          "api",
+          "mongo",
+          "maps"
+        ],
+        "note": "FastAPI devuelve GeoJSON de MongoDB al visor del cliente; las teselas provienen de un proveedor externo."
+      },
+      {
+        "id": "dev",
+        "label": "Flujo de desarrollo",
+        "focus": [
+          "developer",
+          "git",
+          "github",
+          "compose"
+        ],
+        "note": "La descarga del repositorio y Docker Compose coordinan los contenedores locales. CI/CD es una extensión posible."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "user",
+      "type": "external",
+      "label": "Usuario",
+      "sublabel": "Usuario móvil",
+      "pos": [
+        60,
+        195
+      ],
+      "size": [
+        130,
+        85
+      ]
+    },
+    {
+      "id": "flutter",
+      "type": "frontend",
+      "label": "App Flutter",
+      "sublabel": "Cliente móvil",
+      "pos": [
+        280,
+        195
+      ],
+      "size": [
+        210,
+        85
+      ]
+    },
+    {
+      "id": "keycloak",
+      "type": "security",
+      "label": "Keycloak",
+      "sublabel": "OIDC / tokens de acceso",
+      "pos": [
+        280,
+        46
+      ],
+      "size": [
+        210,
+        85
+      ],
+      "tag": "Contenedor Docker"
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "API REST FastAPI",
+      "sublabel": "Validación JWT / lógica de negocio",
+      "pos": [
+        640,
+        195
+      ],
+      "size": [
+        210,
+        85
+      ],
+      "tag": "Contenedor Docker"
+    },
+    {
+      "id": "postgres",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "Usuarios / roles / dispositivos",
+      "pos": [
+        1030,
+        104
+      ],
+      "size": [
+        210,
+        85
+      ],
+      "tag": "Contenedor Docker"
+    },
+    {
+      "id": "mongo",
+      "type": "database",
+      "label": "MongoDB",
+      "sublabel": "Eventos / ubicaciones / GeoJSON",
+      "pos": [
+        1030,
+        286
+      ],
+      "size": [
+        210,
+        85
+      ],
+      "tag": "Contenedor Docker"
+    },
+    {
+      "id": "maps",
+      "type": "external",
+      "label": "Leaflet / Mapas",
+      "sublabel": "Teselas / marcadores / geocercas",
+      "pos": [
+        640,
+        46
+      ],
+      "size": [
+        210,
+        85
+      ]
+    },
+    {
+      "id": "developer",
+      "type": "external",
+      "label": "Desarrollador",
+      "sublabel": "Desarrollo local",
+      "pos": [
+        60,
+        488
+      ],
+      "size": [
+        130,
+        85
+      ]
+    },
+    {
+      "id": "git",
+      "type": "external",
+      "label": "Git",
+      "sublabel": "Commits / ramas",
+      "pos": [
+        280,
+        488
+      ],
+      "size": [
+        210,
+        85
+      ]
+    },
+    {
+      "id": "github",
+      "type": "cloud",
+      "label": "GitHub",
+      "sublabel": "Pull requests / colaboración",
+      "pos": [
+        640,
+        488
+      ],
+      "size": [
+        210,
+        85
+      ]
+    },
+    {
+      "id": "compose",
+      "type": "cloud",
+      "label": "Docker Compose",
+      "sublabel": "Inicio / red / coordinación",
+      "pos": [
+        1030,
+        488
+      ],
+      "size": [
+        210,
+        85
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "Cliente / dispositivo",
+      "wraps": [
+        "user",
+        "flutter"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Autenticación y seguridad",
+      "wraps": [
+        "keycloak"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "API / backend interno",
+      "wraps": [
+        "api"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Datos / red restringida",
+      "wraps": [
+        "postgres",
+        "mongo"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Servicios externos",
+      "wraps": [
+        "maps"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Control de versiones",
+      "wraps": [
+        "developer",
+        "git",
+        "github"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "security-group",
+      "label": "Infraestructura de desarrollo",
+      "wraps": [
+        "compose"
+      ],
+      "pad": 22
+    }
+  ],
+  "connections": [
+    {
+      "id": "use",
+      "from": "user",
+      "to": "flutter",
+      "label": "Interactuar"
+    },
+    {
+      "id": "login",
+      "from": "flutter",
+      "to": "keycloak",
+      "label": "OIDC / JWT"
+    },
+    {
+      "id": "rest",
+      "from": "flutter",
+      "to": "api",
+      "label": "HTTPS / REST + JWT",
+      "labelDy": 25
+    },
+    {
+      "id": "sql",
+      "from": "api",
+      "to": "postgres",
+      "label": "SQL lectura / escritura"
+    },
+    {
+      "id": "geojson",
+      "from": "api",
+      "to": "mongo",
+      "label": "MongoDB / GeoJSON"
+    },
+    {
+      "id": "tiles",
+      "from": "flutter",
+      "to": "maps",
+      "label": "Teselas por HTTPS"
+    },
+    {
+      "id": "mapapi",
+      "from": "api",
+      "to": "maps",
+      "label": "Coordenadas / GeoJSON",
+      "labelDy": -35
+    },
+    {
+      "id": "commit",
+      "from": "developer",
+      "to": "git",
+      "label": "Commit"
+    },
+    {
+      "id": "push",
+      "from": "git",
+      "to": "github",
+      "label": "Push / pull / merge"
+    },
+    {
+      "id": "checkout",
+      "from": "github",
+      "to": "compose",
+      "label": "Descarga / compose up"
+    }
+  ]
+}

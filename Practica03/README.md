@@ -10,10 +10,10 @@ La práctica analiza el ecosistema de Epic Games, incluyendo Fortnite, Unreal En
 
 El proyecto cuenta con dos versiones:
 
-| Versión | Descripción | Archivo |
+| Versión | Descripción | Link |
 | --- | --- | --- |
-| Diagrama sencillo | Canvas estático con los nueve bloques, fondo claro, listas resumidas y formato adaptable a móviles e impresión horizontal. | [diagram-simple/index.html](diagram-simple/index.html) |
-| Diagrama mejorado | Canvas interactivo con fondo oscuro, información ampliada al seleccionar elementos, animaciones y una vista del ecosistema de plataformas. | [diagram-canvas/index.html](diagram-canvas/index.html) |
+| Diagrama sencillo | Canvas estático con los nueve bloques, fondo claro, listas resumidas y formato adaptable a móviles e impresión horizontal. | [Diagrama Sencillo Gitpage](https://devfntxy.github.io/canvas-noob/) |
+| Diagrama mejorado | Canvas interactivo con fondo oscuro, información ampliada al seleccionar elementos, animaciones y una vista del ecosistema de plataformas. | [Diagrama Mejorado GitPage](https://devfntxy.github.io/canvas-epic/) |
 
 ## Contenido del modelo Canvas
 
@@ -43,29 +43,6 @@ Los siguientes prompts recrean la secuencia de solicitud inicial y mejora del mi
 
 > Mejora el mismo modelo Canvas de Epic Games que acabas de crear. Conserva los nueve bloques y el tema, pero utiliza un fondo oscuro, mejor jerarquía visual, tarjetas ordenadas y acentos de color para facilitar la lectura. Agrega interactividad con JavaScript para que, al seleccionar un elemento, se abra una explicación de su función dentro del modelo de negocio. Incluye animaciones con un botón para activarlas o desactivarlas y una segunda vista con un mapa del ecosistema creado con Archify que muestre las relaciones entre las plataformas de Epic Games. Mantén el contenido en español y el diseño adaptable a diferentes tamaños de pantalla. Guarda la versión mejorada en `diagram-canvas/index.html` y conserva la versión sencilla para comparar ambos resultados.
 
-## Evidencias
-
-### Captura 1 — Diagrama sencillo
-
-Captura de la primera versión con la distribución de los nueve bloques del Canvas.
-
-> **Espacio reservado para insertar la primera captura.**
-
-<!-- Sustituye el espacio anterior por: ![Diagrama sencillo de Epic Games](capturas/diagrama-simple.png) -->
-
-<br>
-<br>
-
-### Captura 2 — Diagrama mejorado
-
-Captura de la versión interactiva donde se aprecien las mejoras visuales y el detalle de un elemento seleccionado.
-
-> **Espacio reservado para insertar la segunda captura.**
-
-<!-- Sustituye el espacio anterior por: ![Diagrama mejorado de Epic Games](capturas/diagrama-mejorado.png) -->
-
-<br>
-<br>
 
 ## Tecnologías utilizadas
 
@@ -74,14 +51,6 @@ Captura de la versión interactiva donde se aprecien las mejoras visuales y el d
 - **JSON:** contenido estructurado del modelo en [content.es.json](diagram-canvas/content.es.json).
 - **Archify y SVG:** representación del [mapa del ecosistema](diagram-canvas/ecosystem.html).
 
-## Cómo visualizar la práctica
-
-1. Descarga o clona el repositorio.
-2. Abre `Practica03/diagram-simple/index.html` en un navegador para consultar la versión sencilla.
-3. Abre `Practica03/diagram-canvas/index.html` para explorar la versión mejorada.
-4. Selecciona un elemento del Canvas para consultar su explicación y cambia a la pestaña del ecosistema para ver las plataformas relacionadas.
-
-Conserva los archivos de `diagram-canvas` en su carpeta para que la vista del ecosistema cargue correctamente. No se necesita instalar dependencias para consultar las páginas existentes.
 
 ## Conclusión
 

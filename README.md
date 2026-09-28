@@ -17,7 +17,7 @@ Este repositorio reúne las actividades desarrolladas en la materia de **Integra
 | --- | --- | --- | --- | --- |
 | 01 | Metodología de evaluación de la materia | Revisión de la forma en que se evaluará la materia durante el cuatrimestre. | — | Completada ✅ |
 | 02 | [Práctica 02 - Boceto de arquitectura con Archify](Practica02/README.md) | Diseño de una arquitectura interactiva con Archify, incluyendo backend, autenticación, bases de datos, servicios externos e infraestructura. | [README](Practica02/README.md) · [Reporte](Practica02/docs/ManualnstalacionyPront.pdf) · [Web](https://devfntxy.github.io/diagramweb/) | Completada ✅ |
-| 03 | Práctica 03 - Boceto de Modelo Canvas con Archify | El estudiante realizará un prompt para solicitar el modelo business canvas de una herramienta multiplataforma que use en su vida cotidiana. | — | Completada ✅ |
+| 03 | Práctica 03 - Boceto de Modelo Canvas con Archify | El estudiante realizará un prompt para solicitar el modelo business canvas de una herramienta multiplataforma que use en su vida cotidiana. |[README](Practica02/README.md)  | Completada ✅ |
 
 ## 📝 Objetivo general
 

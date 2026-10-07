@@ -1,0 +1,412 @@
+[
+  {
+    "id": "C01",
+    "title": "Bienvenida",
+    "role": "compartida",
+    "goal": "Entretenimiento y herramientas en un lugar.",
+    "lines": [
+      "EPIC / MÓVIL",
+      "Descubre tu próxima aventura",
+      "Juegos • comunidad • creación"
+    ],
+    "actions": [
+      [
+        "Entrar",
+        "C02"
+      ],
+      [
+        "Crear cuenta",
+        "C03"
+      ]
+    ]
+  },
+  {
+    "id": "C02",
+    "title": "Iniciar sesión",
+    "role": "compartida",
+    "goal": "Acceder con una cuenta existente.",
+    "lines": [
+      "Correo electrónico",
+      "Contraseña ••••••••",
+      "Conexión segura"
+    ],
+    "actions": [
+      [
+        "Iniciar sesión",
+        "C06"
+      ],
+      [
+        "Crear cuenta",
+        "C03"
+      ],
+      [
+        "Olvidé mi contraseña",
+        "C05"
+      ]
+    ]
+  },
+  {
+    "id": "C03",
+    "title": "Crear cuenta",
+    "role": "compartida",
+    "goal": "Registrar una identidad para ambos roles.",
+    "lines": [
+      "Nombre de usuario",
+      "Correo electrónico",
+      "Contraseña",
+      "Aceptar términos y privacidad"
+    ],
+    "actions": [
+      [
+        "Crear cuenta",
+        "C04"
+      ],
+      [
+        "Ya tengo cuenta",
+        "C02"
+      ]
+    ]
+  },
+  {
+    "id": "C04",
+    "title": "Verificar cuenta",
+    "role": "compartida",
+    "goal": "Confirmar el correo antes de continuar.",
+    "lines": [
+      "Enviamos un código a tu correo",
+      "Código: _ _ _ _ _ _",
+      "Reenviar código disponible"
+    ],
+    "actions": [
+      [
+        "Verificar código",
+        "C06"
+      ],
+      [
+        "Cambiar correo",
+        "C03"
+      ]
+    ]
+  },
+  {
+    "id": "C05",
+    "title": "Recuperar acceso",
+    "role": "compartida",
+    "goal": "Solicitar un enlace de recuperación.",
+    "lines": [
+      "Correo de la cuenta",
+      "Recibirás un enlace de recuperación",
+      "Después vuelve a iniciar sesión"
+    ],
+    "actions": [
+      [
+        "Enviar enlace",
+        "C02"
+      ]
+    ]
+  },
+  {
+    "id": "C06",
+    "title": "Elegir rol",
+    "role": "compartida",
+    "goal": "Entrar al espacio correspondiente.",
+    "lines": [
+      "JUGADOR / descubre y juega",
+      "CREADOR / gestiona tus proyectos",
+      "El rol creador requiere autorización"
+    ],
+    "actions": [
+      [
+        "Soy jugador",
+        "J01"
+      ],
+      [
+        "Soy creador autorizado",
+        "D01"
+      ],
+      [
+        "Cerrar sesión",
+        "C01"
+      ]
+    ]
+  },
+  {
+    "id": "J01",
+    "title": "Descubrir juegos",
+    "role": "jugador",
+    "goal": "Explorar la oferta de entretenimiento.",
+    "lines": [
+      "DESTACADO / Órbita",
+      "Aventura espacial • juego de ejemplo",
+      "Novedades y recomendaciones"
+    ],
+    "actions": [
+      [
+        "Buscar juegos",
+        "J02"
+      ],
+      [
+        "Ver destacado",
+        "J03"
+      ],
+      [
+        "Mi biblioteca",
+        "J06"
+      ],
+      [
+        "Cambiar rol",
+        "C06"
+      ]
+    ]
+  },
+  {
+    "id": "J02",
+    "title": "Buscar y filtrar",
+    "role": "jugador",
+    "goal": "Encontrar juegos compatibles con el dispositivo.",
+    "lines": [
+      "Buscar: aventura",
+      "Filtros: móvil • categoría • precio",
+      "Órbita / aventura / $99 MXN"
+    ],
+    "actions": [
+      [
+        "Ver resultado",
+        "J03"
+      ],
+      [
+        "Volver a descubrir",
+        "J01"
+      ]
+    ]
+  },
+  {
+    "id": "J03",
+    "title": "Detalle del juego",
+    "role": "jugador",
+    "goal": "Consultar requisitos y precio antes de comprar.",
+    "lines": [
+      "ÓRBITA / aventura espacial",
+      "Compatible con este dispositivo",
+      "Precio de ejemplo: $99 MXN",
+      "Clasificación, descripción y reseñas"
+    ],
+    "actions": [
+      [
+        "Comprar",
+        "J04"
+      ],
+      [
+        "Seguir buscando",
+        "J02"
+      ]
+    ]
+  },
+  {
+    "id": "J04",
+    "title": "Confirmar compra",
+    "role": "jugador",
+    "goal": "Revisar el pedido y autorizar el pago.",
+    "lines": [
+      "Órbita / licencia digital",
+      "Método: tarjeta de demostración",
+      "Total de ejemplo: $99 MXN",
+      "Revisar condiciones de compra"
+    ],
+    "actions": [
+      [
+        "Confirmar pago simulado",
+        "J05"
+      ],
+      [
+        "Cancelar compra",
+        "J03"
+      ]
+    ]
+  },
+  {
+    "id": "J05",
+    "title": "Compra completada",
+    "role": "jugador",
+    "goal": "Confirmar la adquisición y ofrecer acceso.",
+    "lines": [
+      "✓ Compra de demostración exitosa",
+      "Órbita agregado a tu biblioteca",
+      "Recibo disponible en tu cuenta"
+    ],
+    "actions": [
+      [
+        "Abrir biblioteca",
+        "J06"
+      ],
+      [
+        "Volver a la tienda",
+        "J01"
+      ]
+    ]
+  },
+  {
+    "id": "J06",
+    "title": "Mi biblioteca",
+    "role": "jugador",
+    "goal": "Consultar los juegos adquiridos.",
+    "lines": [
+      "MIS JUEGOS",
+      "Órbita / listo para instalar",
+      "Gestionar almacenamiento del móvil",
+      "Instalación según compatibilidad"
+    ],
+    "actions": [
+      [
+        "Ver juego",
+        "J03"
+      ],
+      [
+        "Explorar tienda",
+        "J01"
+      ],
+      [
+        "Cambiar rol",
+        "C06"
+      ]
+    ]
+  },
+  {
+    "id": "D01",
+    "title": "Panel del creador",
+    "role": "creador",
+    "goal": "Consultar un resumen de la actividad.",
+    "lines": [
+      "ESTUDIO / demo",
+      "1 proyecto en preparación",
+      "Accesos y avisos del programa"
+    ],
+    "actions": [
+      [
+        "Mis proyectos",
+        "D02"
+      ],
+      [
+        "Consultar métricas",
+        "D06"
+      ],
+      [
+        "Cambiar rol",
+        "C06"
+      ]
+    ]
+  },
+  {
+    "id": "D02",
+    "title": "Mis proyectos",
+    "role": "creador",
+    "goal": "Administrar borradores y publicaciones.",
+    "lines": [
+      "Órbita / borrador",
+      "Última edición: hoy",
+      "Estado: información pendiente"
+    ],
+    "actions": [
+      [
+        "Crear proyecto",
+        "D03"
+      ],
+      [
+        "Editar borrador",
+        "D04"
+      ],
+      [
+        "Volver al panel",
+        "D01"
+      ]
+    ]
+  },
+  {
+    "id": "D03",
+    "title": "Crear proyecto",
+    "role": "creador",
+    "goal": "Definir el producto que se distribuirá.",
+    "lines": [
+      "Nombre del proyecto",
+      "Categoría: aventura",
+      "Plataforma objetivo: móvil",
+      "Guardar como borrador"
+    ],
+    "actions": [
+      [
+        "Guardar y continuar",
+        "D04"
+      ],
+      [
+        "Cancelar",
+        "D02"
+      ]
+    ]
+  },
+  {
+    "id": "D04",
+    "title": "Ficha y recursos",
+    "role": "creador",
+    "goal": "Preparar los datos comerciales y visuales.",
+    "lines": [
+      "Descripción del juego",
+      "Portada y capturas / adjuntar",
+      "Precio y regiones",
+      "Clasificación y compatibilidad"
+    ],
+    "actions": [
+      [
+        "Revisar envío",
+        "D05"
+      ],
+      [
+        "Guardar borrador",
+        "D02"
+      ]
+    ]
+  },
+  {
+    "id": "D05",
+    "title": "Enviar a revisión",
+    "role": "creador",
+    "goal": "Revisar requisitos antes de solicitar publicación.",
+    "lines": [
+      "✓ Ficha completa",
+      "✓ Recursos y derechos declarados",
+      "✓ Compatibilidad informada",
+      "El envío no publica automáticamente"
+    ],
+    "actions": [
+      [
+        "Enviar solicitud",
+        "D06"
+      ],
+      [
+        "Corregir información",
+        "D04"
+      ]
+    ]
+  },
+  {
+    "id": "D06",
+    "title": "Estado y métricas",
+    "role": "creador",
+    "goal": "Dar seguimiento a revisión y resultados.",
+    "lines": [
+      "Estado: en revisión",
+      "Observaciones: ninguna por ahora",
+      "Tras aprobación: publicación disponible",
+      "Métricas: sin datos publicados"
+    ],
+    "actions": [
+      [
+        "Consultar proyectos",
+        "D02"
+      ],
+      [
+        "Volver al panel",
+        "D01"
+      ]
+    ]
+  }
+]

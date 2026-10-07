@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Epic móvil · Experiencia del creador",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "ruta",
+      "label": "Experiencia del creador"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "D01",
+      "lane": "ruta",
+      "col": 0,
+      "type": "frontend",
+      "label": "Panel del creador",
+      "width": 136.1
+    },
+    {
+      "id": "D02",
+      "lane": "ruta",
+      "col": 1,
+      "type": "frontend",
+      "label": "Mis proyectos",
+      "width": 120
+    },
+    {
+      "id": "D03",
+      "lane": "ruta",
+      "col": 2,
+      "type": "frontend",
+      "label": "Crear proyecto",
+      "width": 120
+    },
+    {
+      "id": "D04",
+      "lane": "ruta",
+      "col": 3,
+      "type": "frontend",
+      "label": "Ficha y recursos",
+      "width": 128.8
+    },
+    {
+      "id": "D05",
+      "lane": "ruta",
+      "col": 4,
+      "type": "frontend",
+      "label": "Enviar a revisión",
+      "width": 136.1
+    },
+    {
+      "id": "D06",
+      "lane": "ruta",
+      "col": 5,
+      "type": "frontend",
+      "label": "Estado y métricas",
+      "width": 136.1
+    }
+  ],
+  "edges": [
+    {
+      "from": "D01",
+      "to": "D02",
+      "label": "Explorar"
+    },
+    {
+      "from": "D02",
+      "to": "D03",
+      "label": "Seleccionar"
+    },
+    {
+      "from": "D03",
+      "to": "D04",
+      "label": "Continuar"
+    },
+    {
+      "from": "D04",
+      "to": "D05",
+      "label": "Confirmar"
+    },
+    {
+      "from": "D05",
+      "to": "D06",
+      "label": "Consultar"
+    }
+  ],
+  "mainPath": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Origen y regreso",
+      "items": [
+        "C06 → D01 · El menú permite volver a C06.",
+        "Los IDs enlazan este flujo con las imágenes del catálogo."
+      ]
+    }
+  ]
+}

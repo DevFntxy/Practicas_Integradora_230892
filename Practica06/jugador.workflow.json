@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Epic móvil · Experiencia del jugador",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "ruta",
+      "label": "Experiencia del jugador"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "J01",
+      "lane": "ruta",
+      "col": 0,
+      "type": "frontend",
+      "label": "Descubrir juegos",
+      "width": 128.8
+    },
+    {
+      "id": "J02",
+      "lane": "ruta",
+      "col": 1,
+      "type": "frontend",
+      "label": "Buscar y filtrar",
+      "width": 128.8
+    },
+    {
+      "id": "J03",
+      "lane": "ruta",
+      "col": 2,
+      "type": "frontend",
+      "label": "Detalle del juego",
+      "width": 136.1
+    },
+    {
+      "id": "J04",
+      "lane": "ruta",
+      "col": 3,
+      "type": "frontend",
+      "label": "Confirmar compra",
+      "width": 128.8
+    },
+    {
+      "id": "J05",
+      "lane": "ruta",
+      "col": 4,
+      "type": "frontend",
+      "label": "Compra completada",
+      "width": 136.1
+    },
+    {
+      "id": "J06",
+      "lane": "ruta",
+      "col": 5,
+      "type": "frontend",
+      "label": "Mi biblioteca",
+      "width": 120
+    }
+  ],
+  "edges": [
+    {
+      "from": "J01",
+      "to": "J02",
+      "label": "Explorar"
+    },
+    {
+      "from": "J02",
+      "to": "J03",
+      "label": "Seleccionar"
+    },
+    {
+      "from": "J03",
+      "to": "J04",
+      "label": "Continuar"
+    },
+    {
+      "from": "J04",
+      "to": "J05",
+      "label": "Confirmar"
+    },
+    {
+      "from": "J05",
+      "to": "J06",
+      "label": "Consultar"
+    }
+  ],
+  "mainPath": [
+    "J01",
+    "J02",
+    "J03",
+    "J04",
+    "J05",
+    "J06"
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Origen y regreso",
+      "items": [
+        "C06 → J01 · El menú permite volver a C06.",
+        "Los IDs enlazan este flujo con las imágenes del catálogo."
+      ]
+    }
+  ]
+}

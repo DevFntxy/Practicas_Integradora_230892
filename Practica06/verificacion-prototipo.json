@@ -1,0 +1,10 @@
+{
+  "screens": 18,
+  "reachable": 18,
+  "playerJourney": "pass",
+  "creatorJourney": "pass",
+  "horizontalOverflow": false,
+  "mobile": {
+    "horizontalOverflow": false
+  }
+}

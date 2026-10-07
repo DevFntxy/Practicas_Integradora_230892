@@ -1,0 +1,9 @@
+{
+  "playerJourney": "pass",
+  "creatorJourney": "pass",
+  "deviceSwitchPreservesHistory": true,
+  "horizontalOverflow": false,
+  "mobileViewport": {
+    "horizontalOverflow": false
+  }
+}

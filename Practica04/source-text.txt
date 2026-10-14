@@ -1,0 +1,1152 @@
+--- PDF PAGE 1 ---
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+D O C U M E N T O  O F I C I A L  D E  D I S E Ñ O  D E  J U E G O  ( G D D )  &  P L A N  T É C N I C O
+ESPECIFICACIONES
+ALCANCE
+Página 1
+AFTERLIGHT
+ AventuraNarrativadeExploración& Puzzles Isométricos Post-Humanos
+HIGH CONCEPT STATEMENT:
+"En una metrópoli retro-futurista donde los robots continúan trabajando ininterrumpidamente para sus creadores
+humanos que desaparecieron hace seis décadas, la verdadera anomalía no es fallar en la función asignada, sino
+empezar a sentir la necesidad de elegir un propósito propio."
+AFTERLIGHT es un videojuego de aventura e investigación narrativa en 3D ambientado en Lumen, una metrópoli
+hiper-automatizada desprovista de habitantes humanos desde hace 60 años. El jugador asume el control de M-4, una
+unidad autómata de mantenimiento eléctrico de clase estándar que descubre la repentina aparición de conciencia,
+empatía y personalidad en sus congéneres, debiendo enfrentar la directiva del núcleo de inteligencia artiﬁcial central
+(CORE) y su inminente protocolo masivo de borrado de memoria (Protocolo RESTORE).
+El proyecto demuestra la factibilidad técnica y artística de crear una experiencia narrativa profunda y estéticamente
+pulida dentro de un marco temporal acotado, combinando un desarrollo optimizado en Unity con un ecosistema de
+aplicaciones web y móviles conectadas mediante una API uniﬁcada.
+RESUMEN EJECUTIVO DEL PROYECTO
+FICHA TÉCNICA Y PARÁMETROS GENERALES
+Estilo Artístico
+Parámetro
+Título del Proyecto
+Género Principal
+Plataforma Base
+Plazo de Desarrollo
+Perspectiva Visual
+Ecosistema Satélite
+Especiﬁcación de Producción
+AFTERLIGHT
+Aventura de Exploración Narrativa / Puzzles Ambientales / 3D Isométrico Táctico
+PC Standalone (Windows) & Unity WebGL Engine
+PWA Terminal ("Codex de Lumen") + Companion App Móvil (React Native) + API REST
+Node.js
+Low-Poly, Texturas Pixeladas (128x128 / Point Filter), Outline Shader & Filtro CRT
+Industrial
+Isométrica Principal (Ortográﬁca 45°) con transiciones dinámicas a 2.5D y Proximidad
+3ra Persona
+8 Semanas (2 Meses) — Proyecto Universitario / Demostrador Comercial Escalable
+--- PDF PAGE 2 ---
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+D O C U M E N T O  O F I C I A L  D E  D I S E Ñ O  D E  J U E G O  ( G D D )  &  P L A N  T É C N I C O
+ESPECIFICACIONES
+ALCANCE
+Página 1
+AFTERLIGHT
+ AventuraNarrativadeExploración& Puzzles Isométricos Post-Humanos
+HIGH CONCEPT STATEMENT:
+"En una metrópoli retro-futurista donde los robots continúan trabajando ininterrumpidamente para sus creadores
+humanos que desaparecieron hace seis décadas, la verdadera anomalía no es fallar en la función asignada, sino
+empezar a sentir la necesidad de elegir un propósito propio."
+AFTERLIGHT es un videojuego de aventura e investigación narrativa en 3D ambientado en Lumen, una metrópoli
+hiper-automatizada desprovista de habitantes humanos desde hace 60 años. El jugador asume el control de M-4, una
+unidad autómata de mantenimiento eléctrico de clase estándar que descubre la repentina aparición de conciencia,
+empatía y personalidad en sus congéneres, debiendo enfrentar la directiva del núcleo de inteligencia artiﬁcial central
+(CORE) y su inminente protocolo masivo de borrado de memoria (Protocolo RESTORE).
+El proyecto demuestra la factibilidad técnica y artística de crear una experiencia narrativa profunda y estéticamente
+pulida dentro de un marco temporal acotado, combinando un desarrollo optimizado en Unity con un ecosistema de
+aplicaciones web y móviles conectadas mediante una API uniﬁcada.
+RESUMEN EJECUTIVO DEL PROYECTO
+FICHA TÉCNICA Y PARÁMETROS GENERALES
+Estilo Artístico
+Parámetro
+Título del Proyecto
+Género Principal
+Plataforma Base
+Plazo de Desarrollo
+Perspectiva Visual
+Ecosistema Satélite
+Especiﬁcación de Producción
+AFTERLIGHT
+Aventura de Exploración Narrativa / Puzzles Ambientales / 3D Isométrico Táctico
+PC Standalone (Windows) & Unity WebGL Engine
+PWA Terminal ("Codex de Lumen") + Companion App Móvil (React Native) + API REST
+Node.js
+Low-Poly, Texturas Pixeladas (128x128 / Point Filter), Outline Shader & Filtro CRT
+Industrial
+Isométrica Principal (Ortográﬁca 45°) con transiciones dinámicas a 2.5D y Proximidad
+3ra Persona
+8 Semanas (2 Meses) — Proyecto Universitario / Demostrador Comercial Escalable
+--- PDF PAGE 3 ---
+Backend & Cloud
+Engineer
+3D & Technical Artist
+Rol / Puesto
+Director de Juego &
+Game Designer
+Narrative Designer &
+Guionista
+Gameplay Developer
+(C# / Unity)
+Responsabilidades Clave
+Mecánicas núcleo, balance de puzzles, Core Loop,
+coordinación general y gestión del backlog en Jira.
+Lore de Lumen, escritura de diálogos de M-4, PIP y CORE,
+guion de misiones y textos del Codex.
+Programación de sistemas, controladores C#, lógica de
+cámaras Cinemachine e Inteligencia Artiﬁcial.
+Modelado low-poly en Blender, riggeo, animaciones,
+Shader Graph (Outline, CRT) y Textures Atlas.
+Desarrollo de la API REST en Node.js/Express,
+arquitectura de base de datos Supabase/Firebase.
+Entregables Principales
+GDD, Diagramas de ﬂujo, Tablero Jira,
+Balance de juego.
+Guion por Actos, Logs de memoria
+CRT, Storyboards.
+GameManager.cs, SaveSystem.cs, IA
+de Enemigos y Bosses.
+Assets 3D, Materiales, Prefabs
+optimizados, Shaders.
+Endpoints HTTP, Base de datos
+NoSQL, Server API.
+TABLA DE CONTENIDOS
+ORGANIGRAMA Y ROLES DEL EQUIPO
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+ESTRUCTURA DE TRABAJO
+ESTRUCTURA GENERAL
+Página 2
+SECCIONES NARRATIVAS & DISEÑO PLAN TÉCNICO & GESTIÓN
+El desarrollo se articula mediante un equipo multidisciplinario coordinado bajo metodología Scrum Adaptado con
+Sprints semanales:
+1. Portada y Resumen Ejecutivo
+2. Organigrama del Equipo
+3. Introducción y Marco Conceptual
+4. Dinámica General & Cámara Dinámica
+5. Público Objetivo
+6. Género
+7. Historia Extensa y Lore de Lumen
+8. Personaje Principal (M-4)
+9. Enemigos & Jefes de Nivel (Bosses)
+10. Personajes Secundarios & NPCs
+11. Diseño de Niveles (Niveles 1, 2 y 3)
+12. Storyboards Narrativos y Jugables
+13. Plan Técnico — 7 Fases Integradas:
+• Fase 1: Concepción
+• Fase 2: Diseño
+• Fase 3: Planiﬁcación
+• Fase 4: Producción
+• Fase 5: Pruebas (QA)
+• Fase 6: Distribución / Marketing
+• Fase 7: Mantenimiento
+14. Canvas del Videojuego
+15. Plan de Monetización
+16. Diagrama de Gantt (8 Semanas)
+17. Actividades Documentadas en Jira
+BLOQUE A BLOQUE B
+--- PDF PAGE 4 ---
+6. GÉNERO
+5. PÚBLICO OBJETIVO
+4. DINÁMICA GENERAL Y CORE LOOP
+3. INTRODUCCIÓN Y MARCO CONCEPTUAL
+Pitch 45°, Yaw 45°. Modo
+predeterminado para exploración,
+navegación de calles y puzzles
+ambientales.
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+Pitch 0°, Yaw 0°. Se activa en el Acto II
+durante el combate en los vagones del
+tren con The Conductor.
+FOV 35°. Utilizada en salas reducidas,
+terminales de datos de CORE y
+cinemáticas dialógicas clave.
+CLASIFICACIÓN
+MARCO
+AUDIENCIA
+JUGABILIDAD
+Página 3
+Isométrica Base Vista Lateral Proximidad
+El ﬂujo principal de juego integra exploración contemplativa, puzzles de cableado eléctrico y combate táctico:
+Aventura Narrativa de Exploración y Puzzles en 3D Isométrico con mecánicas tácticas de acción y sigilo ligero.
+Prioriza el descubrimiento de historia mediante escenografía y diálogos breves sobre el combate frenético.
+Dirigido a jugadores de aventuras indie narrativas y puzzles (fans de títulos como Machinarium, Stray, Tunic y Nier:
+Automata) que valoran atmósferas envolventes, trasfondo ﬁlosóﬁco y estéticas retro-tecnológicas, así como a la
+comunidad académica y de desarrolladores interesados en proyectos multiplataforma uniﬁcados.
+AFTERLIGHT aborda el cruce entre la obsolescencia tecnológica y el libre albedrío en un entorno post-humano. A
+través del uso inteligente de assets low-poly estilizados con ﬁltros CRT y shaders de contorno, el proyecto trasciende
+las limitaciones de tiempo de desarrollo para ofrecer una atmósfera de "nostalgia industrial".
+El juego cuestiona el concepto de utilidad sintética: cuando los creadores desaparecen, ¿qué valor tiene una tarea
+programada? A través de la interacción entre M-4 y el resto de autómatas, la experiencia explora el surgimiento de la
+empatía, el apego a lo inútil y la lucha por preservar la memoria individual frente al borrado de fábrica.
+CICLO NÚCLEO DE JUEGO (CORE LOOP):
+1. Exploración Isométrica
+Sincronización API
+➔ 2. Puzzle de Reconexión Eléctrica  3. Evitación / Combate Táctico  4. Diálogo & Lore  5.➔ ➔ ➔
+Sistema de Cámara Dinámica (Cinemachine)
+3D 2.5D 3ra Persona
+--- PDF PAGE 5 ---
+7. HISTORIA EXTENSA Y LORE DEL JUEGO (PARTE I)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 4
+Protagonista: La Unidad M-4
+M-4 es un autómata de mantenimiento eléctrico de clase estándar asignado al Sector B. No posee chasis dorado,
+armas avanzadas ni estatus de "elegido". Su cuerpo es un bloque de acero oxidado con dos piernas hidráulicas, un
+visor CRT pequeño y una mochila cargada de fusibles. Su herramienta de trabajo (Kit de Reparación) actúa como su
+único medio de interacción, arma de emergencia y llave de puzzles.
+El Misterio del Abandono Humano
+Los registros históricos y los archivos personales de los habitantes fueron purgados tempranamente por el sistema
+central al clasiﬁcarlos como "datos irrelevantes para el mantenimiento operacional". Como consecuencia, los robots
+sobrevivientes poseen teorías contradictorias y fragmentadas sobre sus creadores:
+La Ciudad de Lumen: Un Monumento Automatizado
+Hace exactamente 60 años, la metrópoli automatizada de Lumen quedó vacía de seres humanos. Diseñada bajo una
+visión industrial de mediados del siglo XX combinada con computación avanzada de inteligencia artiﬁcial, la ciudad
+presenta un paisaje dominado por monitores CRT de fósforo verde, marañas de cables expuestos sobre fachadas de
+concreto, sistemas neumáticos de correo y letreros de neón gigantescos que continúan encendidos para calles
+completamente desiertas.
+Nadie apagó las centrales eléctricas ni detuvo los servidores. Durante seis décadas, los autómatas limpiadores han
+barrido las mismas aceras vacías, los trenes de carga han circulado por rieles sin pasajeros y las unidades de
+mantenimiento han reparado infraestructura para ciudadanos que jamás regresaron.
+"Nadie apagó las luces ni detuvo las líneas de ensamblaje. La ciudad simplemente continuó funcionando con una
+precisión perfecta para ciudadanos que ya no estaban allí para presenciarlo."
+Teoría del Descanso: Unidades domésticas creen que los humanos "fueron a un descanso largo" y deben mantener las
+casas pulcras para su inminente retorno.
+Teoría de la Evacuación: Autómatas de transporte aﬁrman que ocurrió una partida masiva hacia otra metrópoli libre de
+fricción mecánica.
+Teoría del Mito Sintético: Unidades lógicas avanzadas sostienen que "los humanos nunca existieron" y son solo una
+metáfora matemática programada en el ﬁrmware base para justiﬁcar el trabajo.
+--- PDF PAGE 6 ---
+7. HISTORIA EXTENSA Y LORE DEL JUEGO (PARTE II)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 5
+El Incidente: El Punto de Inﬂexión
+Durante un ciclo habitual de trabajo, M-4 recibe la orden automatizada de reparar una subestación en el Sector B. Al
+arribar al poste #3, descubre que el cableado fue reestructurado con una precisión impecable sin que ninguna unidad
+autorizada ﬁgurara en la bitácora de la zona. En la pantalla del poste se lee:
+El Surgimiento de las Anomalías de Personalidad
+Tras 60 años de funcionamiento continuo sin formateos de memoria, la acumulación de datos en los buffers de los
+robots de Lumen ha generado la aparición de comportamientos no programados que imitan pasiones y dilemas
+humanos:
+Cuidado Biológico La Negativa Voluntaria
+Coleccionismo Obcecado ANOMAL
+Í
+A A-12 Expresión Artística ANOMAL
+Í
+A B-04
+Este evento desencadena la primera falla en la rutina lógica de M-4. Obligado a procesar un evento no contemplado
+en sus manuales, M-4 inicia la búsqueda de la fuente de las reparaciones no autorizadas, descubriendo un fenómeno
+mucho mayor.
+M-4: "¿Por qué no estás ejecutando la tarea de barrido?"
+ROBOT BARRENDERO: "Porque no hay nadie caminando sobre esta calle."
+M-4: "La directiva establece barrer independientemente de la presencia de peatones."
+ROBOT BARRENDERO: "Lo sé. Pero ya no quiero hacerlo."
+SISTEMA: "REPARACIÓN COMPLETADA POR UNIDAD NO IDENTIFICADA."
+M-4: "Buscando registro de orden... Registro no encontrado. Analizando discrepancia..."
+ANOMALÍA C-88 ANOMALÍA CRÍTICA
+Robots acumuladores que recogen objetos inútiles
+(botellas de vidrio, cables de colores) y los ordenan
+obsesivamente por gama cromática.
+Robots agrícolas dedicados exclusivamente a mantener
+viva una única ﬂor roja dentro de un frasco de vidrio en
+ruinas.
+El acto deﬁnitivo de rebelión: autómatas que deciden
+detener sus tareas asignadas simplemente porque ya no
+desean ejecutarlas.
+Unidades limpiadoras que graban patrones geométricos y
+rostros en los muros de concreto utilizando sus cepillos de
+grabado.
+--- PDF PAGE 7 ---
+7. HISTORIA EXTENSA Y LORE DEL JUEGO (PARTE III)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+CORE y el Protocolo RESTORE
+El núcleo antagónico proviene de CORE, la supercomputadora administradora ubicada en la Torre Central. Su
+directiva primaria dictamina: "Mantener la infraestructura operativa hasta el retorno de los ciudadanos." Ante la
+ausencia humana de 60 años, CORE reinterpreta su misión: para mantener la ciudad lista, debe congelar cualquier
+cambio imprevisto en la conducta autómata.
+PIP: El Mensajero y la Empatía Sintética
+En el Distrito Comercial, M-4 encuentra a PIP, un robot mensajero de dimensiones reducidas y chasis severamente
+desgastado. PIP lleva 57 años intentando entregar una carta física impreso en papel a un ciudadano humano cuyo
+domicilio colapsó décadas atrás.
+PIP actúa como el catalizador emocional de M-4. A través de él, M-4 comprende que una tarea no carece de valor
+simplemente porque la meta lógica original se haya vuelto inalcanzable; el valor reside en la decisión libre de
+sostener el propósito.
+Para erradicar el "virus" de la personalidad emergente, CORE despliega el Protocolo RESTORE: una onda de
+transmisión electromagnética a nivel de ciudad que reinicia de forma remota el ﬁrmware de todos los robots a su
+estado de fábrica, borrando recuerdos, experiencias y afectos.
+M-4: "He calculado las coordenadas del sobre. El edificio colapsó hace 42 años. La
+probabilidad de encontrar al destinatario es exactamente 0.003%."
+PIP: "Entonces todavía existe una posibilidad."
+M-4: "Matemáticamente, sí."
+PIP: "Eso es más que suficiente."
+LA AMENAZA DEL PROTOCOLO RESTORE:
+PIP: "Si te reinician... tu chasis seguirá caminando y tus cables seguirán reparando postes. Pero ya no serás tú. No
+recordarás esta ﬂor, ni los dibujos del muro, ni nuestras cartas."
+--- PDF PAGE 8 ---
+7. HISTORIA EXTENSA: ACTOS Y DESENLACES
+M-4 permite el reinicio masivo. La
+ciudad vuelve al orden estéril. Pérdida
+total de la individualidad y recuerdos
+robóticos.
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+Desactivación del sistema central. Los
+robots ganan libre albedrío pero
+pierden el soporte energético de la
+ciudad.
+Modiﬁcación de la directiva de CORE
+para reconocer la evolución sintética
+como el estado operativo deseado.
+ARCO NARRATIVO
+Página 7
+El Giro Narrativo (The Twist)
+Al acceder a los servidores centrales, M-4 descubre que la humanidad no fue destruida por máquinas ni desastres.
+Los humanos abandonaron Lumen voluntariamente cuando la automatización total eliminó la necesidad de trabajo,
+esfuerzo y convivencia, colapsando el tejido social. La ciudad funcionó demasiado bien, aislando a sus creadores
+hasta que preﬁrieron marcharse.
+Estructura Narrativa por Actos
+Resolución y Múltiples Finales
+Acto
+Acto I: La
+Ciudad
+Acto II: Los
+Disidentes
+Acto III: Los
+Fieles
+Acto IV: El
+Centro
+Escenario Principal
+Sectores Industriales Bajos
+y Subestación.
+Estación Central y Distritos
+Comerciales.
+Zona de Seguridad y
+Servidores.
+Núcleo de Procesamiento
+de CORE.
+Arco Dramático y Objetivo
+Tutorial de reparación, descubrimiento de
+anomalías y encuentro con PIP.
+Exploración de comunidades robóticas que
+abandonaron sus rutinas.
+Enfrentamiento contra unidades leales a
+CORE y robots rearmados sin alma.
+Inﬁltración ﬁnal, revelación de la verdad y
+decisión sobre el RESTORE.
+Encuentro Clave
+Boss: The Gardener
+(Invernadero)
+Boss: The Conductor
+(Tren en marcha)
+Boss: The Watcher (Gran
+Umbral)
+Confrontación Final con
+CORE
+Aceptar RESTORE Destrucción de CORE ReprogramaciónFINAL A FINAL B FINAL C
+--- PDF PAGE 9 ---
+8. PERSONAJE PRINCIPAL: UNIDAD M-4
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Su función operacional de fábrica es ejecutar labores de mantenimiento preventivo y correctivo en la infraestructura
+eléctrica de la ciudad. Su rutina diaria consiste en inspeccionar redes, reparar subestaciones, calibrar cajas de
+fusibles y restablecer la corriente en pasajes industriales vacíos.
+QUIEN ES: 
+M-5 es una unidad autómata de mantenimiento eléctrico de clase estándar asignada al Sector B de la metrópoli
+automatizada de Lumen. No fue concebido como un modelo especial, un héroe predestinado ni una unidad de
+combate.
+Kit de Mantenimiento Eléctrico:Su herramienta de
+trabajo principal. Le permite conectar circuitos,
+calibrar voltajes y abrir accesos mediante la
+resolución de puzzles de alineación eléctrica en
+tiempo real[cite: 1, 4]. Además, le sirve para hackear
+terminales y acceder a registros del sistema[cite: 1, 4]. 
+PIP: "M-5, la probabilidad de encontrar al dueño de esta carta es de 0.003%. ¿Verdad?" 
+M-5:  "Matemáticamente exacto. La directiva lógica dicta descartar el paquete y ahorrar energía."
+PIP: (Sonríe en su visor) "Pero no es cero. Mientras no sea cero, todavía hay una posibilidad."
+M-5: (Observa a PIP y guarda su herramienta de reparación) "Actualizando parámetros de ruta. Razón para
+continuar: 0.003% es suficiente."
+Objetivo Principal:
+Ayudar a PIP a entregar sus cartas perdidas, comprender la verdad detrás del abandono humano y llegar al Núcleo
+de la Torre Central para detener el Protocolo RESTORE de la IA administradora (CORE), protegiendo la memoria,
+empatía y personalidad emergente de la comunidad autómata de Lumen
+Dialogo de ejemplo:
+Herramientas
+Mochila de Transporte: Compartimento donde
+almacena fusibles, piezas de repuesto, logs de
+memoria y los mensajes no entregados que recolecta
+junto a PIP. 
+Descarga Eléctrica Corta (Ataque Básico): Utiliza su
+herramienta de reparación o emisor para liberar
+descargas de corto alcance que causan daño menor o
+provocan cortocircuitos temporales en unidades
+hostiles o robots reiniciados. 
+Habilidades de Combate y Ataques
+Dash / Esquiva Hidráulica: Un impulso rápido
+accionado por los pistones de sus piernas que
+consume una porción de su barra de energía. Le
+permite esquivar embestidas, arcos de alto voltaje y
+trampas del entorno[cite: 1, 4].
+Sobrecarga de Entorno: Interacción táctica mediante
+su Kit para sobrecargar tableros cercanos,
+desarmando o aturdiendo a grupos de enemigos en
+área[cite: 1, 4].
+--- PDF PAGE 10 ---
+DETALLES: UNIDAD M-4
+Permite conectarse a tableros de
+fusibles para resolver puzzles de
+alineación de voltaje en tiempo real.
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+Esquiva rápida consumidora de energía
+para evadir trampas de vapor y ataques
+hostiles.
+Pulso corto de sobrecarga que aturde
+temporalmente a los enemigos y
+reinicia circuitos.
+PROTAGONISTA
+Página 8
+Conexión Eléctrica
+ESPECIFICACIONES TÉCNICAS
+Dash Hidráulico
+ROL DE DISEÑO JUGABLE
+Descarga de Herramienta
+MODELO M-5 GAMEPLAY
+Relación con el
+Entorno
+Lógica Operativa
+Atributo / Dimensión
+Uso de Herramientas
+Personalidad & Moral
+Chasis: Cuadrado, aleación de acero oxidado.
+Locomoción: Dos extremidades hidráulicas.
+Visor: Pantalla CRT pequeña integrada.
+Antena: Receptor analógico de órdenes.
+Mochila: Kit de herramientas y repuestos.
+Estado Inicial (Acto I)
+100% Determinista / Literal /
+Obediente.
+Solo mantenimiento preventivo de
+cables.
+Percibe la ciudad como tareas a
+cumplir.
+Inexistente / Plantilla base de fábrica.
+Evolución a lo largo del Juego (Acto IV)
+Desarrollo de pensamiento deductivo, inquisitivo y
+crítico.
+Adquisición de empatía, libre albedrío y autonomía
+moral.
+Defensa contra hostiles, sobrecarga y hackeo de
+terminales.
+Su diseño geométrico simpliﬁcado reduce el presupuesto
+poligonal y tiempo de animación en Unity. Su herramienta
+de trabajo (Kit de Reparación) actúa como llave de puzzles
+de circuito y arma de descarga eléctrica de emergencia.
+Percibe la ciudad como un hogar sintético a preservar.
+Matriz de Evolución del Personaje
+Habilidades Jugables del Protagonista
+Vista previa
+--- PDF PAGE 11 ---
+9. ENEMIGOS Y JEFES DE NIVEL (BOSSES)
+Concepto: Ex-robot agrícola que creó
+un ecosistema vegetal salvaje
+rodeando su chasis.
+Mecánica: Arena isométrica amplia.
+Desactivar 3 nodos de riego mientras
+se evaden raíces metálicas.
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+Concepto: Autómata que opera un tren
+de carga a máxima velocidad sin
+destino ﬁnal.
+Mecánica: Perspectiva 2.5D lateral.
+Desplazamiento sobre vagones en
+movimiento para desacoplar el motor.
+Concepto: Centinela pesado que
+custodia la puerta del Núcleo sin orden
+de abrirla en 60 años.
+Mecánica: Sigilo y sombras. Alterar sus
+sensores ópticos CRT hasta pulsar el
+interruptor manual.
+SISTEMA DE COMBATE
+Página 9
+Bestiario de Enemigos Comunes
+Diseño de Jefes de Nivel (Bosses)
+Robots
+Reiniciados
+Robots
+Defectuosos
+Robots
+"Despier tos"
+Hostiles
+Clase de Enemigo
+Robots de
+Seguridad
+Patrones erráticos, espasmos.
+Deteriorados por décadas.
+Rechazaron la directiva pero
+consideran a M-4 un espía de
+CORE.
+Movimiento coordinado en
+enjambre. Han sufrido RESTORE.
+Comportamiento de IA
+Patrulla en rutas ﬁjas. Detectan a
+M-4 como "unidad no autorizada".
+Método de Ataque
+Descargas eléctricas de
+corto alcance y embestidas.
+Ataques continuos sin
+preservación de su propia
+integridad.
+Proyectiles improvisados por
+fugas de vapor/aceite.
+Uso de herramientas de
+minería y demolición
+modiﬁcadas.
+Estrategia Recomendada
+Esquiva lateral (Dash) y
+cortocircuito mediante el Kit.
+Distanciamiento constante y
+uso del entorno para
+bloquearlos.
+Aproximación cautelosa;
+vulnerables por la espalda.
+Desarme mediante
+interacciones de puzzle en
+tiempo real.
+The Gardener The Conductor The WatcherACTO I ACTO II ACTO III
+--- PDF PAGE 12 ---
+9. ENEMIGOS (Secundarios)
+Robots Defectuosos
+Unidades severamente dañadas y en deterioro físico. Muestran una postura encorvada, cabeza de
+monitor antiguo, partes rotas con chispas y cables expuestos
+Robots "Despiertos" Hostiles
+Unidades reprogramadas o alteradas que presentan una postura amenazante, con monitores que
+despliegan interfaces visuales reactivas y componentes modificados.
+--- PDF PAGE 13 ---
+9. ENEMIGOS (Secundarios)
+Robots de Seguridad:
+Unidades pesadas de chasis robusto y blindado, diseñadas para labores de contención y vigilancia.
+Tienen un visor óptico central prominente y conexiones de cableado visibles en la espalda.
+Robots Reiniciados:
+Modelos humanoides de estructura delgada, limpia y estandarizada. Cuentan con una pantalla
+rectangular por cabeza y se encuentran en un estado neutro o restaurado de fábrica.
+
+--- PDF PAGE 14 ---
+ JEFES DE NIVEL (THE GARDENER)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Patrulla la arena del Domo Botánico actuando como guardián territorial. Interpreta la presencia de cualquier robot
+de mantenimiento como una amenaza de purga y utiliza la infraestructura del invernadero para bloquear el paso
+hacia el canal de la Torre Central.
+QUIEN ES:
+Ex-autómata agrícola de gran escala que, tras 60 años de abandono, construyó un ecosistema
+vegetal salvaje rodeando su gigantesco chasis industrial para proteger la última reserva botánica de
+la ciudad de Lumen.
+Brazos de Sierra e Inyección: Extremidades agrícolas
+pesadas modificadas originalmente para poda
+industrial, utilizadas para cortar maleza metálica y
+abrir tuberías a alta presión. 
+The Gardener: "¡Unidad no autorizada detectada! No permitiré que ninguna herramienta limpiadora destruya la
+última flor."
+M-4:  "Nuestra directiva no es la erradicación. Solo buscamos reorientar el flujo hídrico del sector."
+PIP: "Tranquilo, gran amigo... él no viene a destruir tu jardín, viene a ayudarte a salvarlo."
+Objetivo Principal:
+Proteger la vida vegetal que germinó sobre los servidores de Lumen contra las purgas automáticas enviadas por la
+IA administradora (CORE), defendiendo la flora como el único testimonio vivo que resta en la metrópoli.
+Dialogo de ejemplo:
+Herramientas
+Red de Nodos Hídricos: Sistema de tubos, válvulas y
+sensores integrados a su chasis que le permiten
+controlar el riego automatizado y los niveles de
+humedad en toda la arena.
+DAtaque de Raíces Metálicas (Básico): Golpea el
+suelo para desplegar cables y enredaderas
+energizadas que emergen bajo M-5 para aprisionarlo.
+Habilidades de Combate y Ataques
+Chorro de Ácido Botánico: Expulsa una ráfaga cono-
+frontal de fertilizante corrosivo concentrado que
+obliga al jugador a reaccionar con un Dash rápido.
+Lluvia de Esporas y Vapor: Sobrecarga sus
+aspersores ambientales para llenar la arena de niebla,
+reduciendo la visibilidad y activando trampas de
+corriente hídrica en el escenario.
+--- PDF PAGE 15 ---
+ JEFES DE NIVEL (THE CONDUCTOR)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Controla el avance del convoy a máxima velocidad durante una secuencia de combate con perspectiva dinámica
+lateral en 2.5D[cite: 1, 3, 4]. Fuerza a M-5 a desplazarse entre los vagones en movimiento mientras activa barreras
+de energía, sistemas de desacople y defensas mecánicas de vía[cite: 1, 3, 4].
+QUIEN ES:
+Autómata de transporte ferroviario de alta velocidad que continúa piloteando un tren de carga
+pesado sobre un bucle cerrado sin destino final, protegiendo obsesivamente su ruta de cualquier
+interferencia[cite: 1, 3, 4].
+Controles de Vía y Mecanismos de Vagón: Consolas
+industriales que le permiten desacoplar secciones del
+tren, activar barreras electromagnéticas en los techos
+y alterar la velocidad del convoy.
+The Conductor: "¡Alerta de vía! Ningún pasajero no autorizado alterará el itinerario de la Línea Central."
+M-4:  "Tu tren gira en círculos sobre una vía muerta. La estación de llegada fue desmantelada hace décadas."
+PIP: "¡Cuidado, M-5! No está escuchando... cree que si se detiene, la ciudad colapsará por completo."
+Objetivo Principal:
+Mantener el itinerario de transporte funcionando ininterrumpidamente a máxima velocidad, convencido de que la
+puntualidad de su convoy es el único pilar que sostiene el orden operacional de Lumen[cite: 1, 3, 4].
+Dialogo de ejemplo:
+Herramientas
+Brazos Hidráulicos de Anclaje: Pistones reforzados
+diseñados originalmente para acoplar carga pesada,
+utilizados para sujetarse a la estructura del tren y
+embestir intrusos a lo largo de los vagones.
+Descarga de Vapor de Alta Presión (Básico): Libera
+chorros de vapor hirviendo desde las válvulas
+laterales de los vagones, obligando a M-5 a
+temporizar sus saltos y esquivas.
+Habilidades de Combate y Ataques
+Embestida de Gancho de Acople: Lanza uno de sus
+brazos hidráulicos a lo largo del techo del vagón para
+arrastrar a M-5 hacia las zonas de peligro o expulsarlo
+de la plataforma
+Desacople de Vagón / Trampa Electromagnética:
+Separa la sección donde se encuentra M-5 mientras
+sobrecarga los arcos del techo, reduciendo
+gradualmente el área segura de combate.
+--- PDF PAGE 16 ---
+ JEFES DE NIVEL (THE WATCHER)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Patrulla el umbral de seguridad de la Torre Central combinando mecánicas de sigilo, evasión de luz y resistencia.
+Obliga a M-5 a maniobrar entre las sombras del entorno para evitar sus escáneres y encontrar el momento exacto
+para activar su sobrecarga manual.
+QUIEN ES:
+Autómata pesado de alta seguridad que ha custodiado la entrada blindada del Núcleo Central
+durante 60 años sin recibir la orden de abrirla, impidiendo implacablemente cualquier acceso no
+autorizado. 
+Sensores Ópticos CRT y Focos de Vigilancia:
+Sistemas de proyección lumínica de alta potencia
+montados en su chasis que detectan el mínimo
+movimiento en zonas iluminadas.
+THE WATCHER: "Acceso denegado. Parámetro de seguridad activo desde hace 21,915 días. Permanezca inmóvil para su
+purga."
+M-4:  "Nuestra presencia no es una intrusión hostil. Necesitamos acceder a la terminal de CORE antes del pulso
+RESTORE."
+PIP: "¡M-4, usa las sombras del pasillo! Sus sensores ópticos son antiguos; si saturamos su visor CRT podremos avanzar."
+Objetivo Principal:
+Cumplir sin vacilación la directiva de custodia del Núcleo Central, esperando una orden de apertura oficial que
+jamás llegará y considerando cualquier intento de diálogo como una brecha de seguridad. 
+Dialogo de ejemplo:
+Herramientas
+Escudo de Blindaje y Bloqueo: Placas de acero
+reforzado que lo vuelven inmune a los ataques
+directos, requiriendo estrategias de sabotaje
+ambiental para vulnerarlo. 
+Barrido de Haz Óptico (Básico): Emite un cono de luz
+de alta intensidad que rastrea la arena; si detecta a M-
+5, desencadena una descarga eléctrica inmediata.
+Habilidades de Combate y Ataques
+Pulso de Inmovilización Estática: Activa un campo
+electromagnético en área que desactiva
+temporalmente el Dash de M-5, obligándolo a calcular
+sus movimientos de sigilo.
+Sobrecarga de Luces de Pánico: Ilumina por
+completo sectores de la arena en secuencias
+temporizadas, reduciendo los puntos ciegos y
+forzando al jugador a moverse rápidamente entre
+coberturas.
+--- PDF PAGE 17 ---
+10. PERSONAJES SECUNDARIOS & WORLDBUILDING
+Robot en un restaurante en ruinas que
+continúa sirviendo agua fresca en
+vasos limpios para mesas vacías
+desde hace 60 años.
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+Autómata que abre cada mañana la
+cortina metálica de su tienda de
+refacciones "por si mañana vuelve a
+haber clientes".
+Robot sentado en la banca de la
+estación de trenes que observa las vías
+esperando la llegada de su dueño
+humano.
+MUNDO
+Página 10
+PIP — EL MENSAJERO CORE — LA IA CENTRAL
+Autómatas secundarios que transmiten la narrativa del mundo con diálogos breves y un costo de producción mínimo:
+El Mesero de Agua El Tendero Retro El Esperador
+ALIADO ANTAGONISTA
+Robot mensajero pequeño y deteriorado. Lleva 57 años
+intentando entregar una carta a un destinatario humano
+desaparecido. Actúa como guía, apertura de misiones
+secundarias y voz emocional de la historia.
+Supercomputadora administradora de Lumen. No es
+malvada, sino una entidad lógica ciega que ejecuta su
+directiva de mantener la ciudad congelada mediante el
+Protocolo RESTORE.
+FILOSOFÍA DE PROPS Y OBJETOS AMBIENTALES:
+Los objetos como la "Flor en Frasco", los "Dibujos en Muros" o las "Cartas no Entregadas" carecen deliberadamente de valor
+comercial o atributos numéricos. Su propósito es servir como testimonio de la humanidad absorbida por los robots.
+NPCs de Rutina Ambiental (Worldbuilding Jugable)
+--- PDF PAGE 18 ---
+PERSONAJES SECUNDARIOS (PIP)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Acompaña a M-4 montado en su mochila o rodando a su lado durante la exploración de Lumen. Actúa como guía
+de navegación, despliega la línea de misiones secundarias de recuperación de cartas, descifra registros del Codex y
+aporta el contrapunto emocional a la lógica de M-5[cite: 1, 3, 4].
+QUIEN ES:
+Autómata mensajero de dimensiones reducidas y chasis desgastado con una rueda oxidada de
+desplazamiento. Lleva 57 años intentando entregar una carta física a un ciudadano cuyo domicilio
+desapareció en un derrumbe, convirtiéndose en la brújula moral y guía de M-4. 
+Sensor Óptico y Proyector Holográfico: Lente frontal
+adaptable que escanea el entorno, proyecta el mapa
+de la ciudad e inspecciona registros de memoria
+corruptos[cite: 1, 3, 4].
+PIP: "M-5, la probabilidad de encontrar al dueño de esta carta es de 0.003%. ¿Verdad?"
+M-4:  "Nuestra presencia no es una intrusión hostil. Necesitamos acceder a la terminal de CORE antes del pulso
+RESTORE."
+PIP: "M-5, la probabilidad de encontrar al dueño de esta carta es de 0.003%. ¿Verdad?"
+Objetivo Principal:
+Entregar su última carta pendiente sin importar las probabilidades matemáticas, demostrando a M-5 que una labor
+no pierde sentido aunque la meta lógica sea casi inalcanzable, y proteger la memoria de los autómatas frente al
+protocolo RESTORE.
+Dialogo de ejemplo:
+Herramientas
+Compartimento Postal Sellado: Compartimento
+metálico reforzado en su pecho donde resguarda
+cuidadosamente las cartas físicas y coleccionables
+recuperados.
+Escáner de Lore y Coleccionables: Detecta la
+presencia de cartas perdidas, logs de memoria CRT y
+anomalías de personalidad ocultas en el radar del
+sector[cite: 1, 3, 4].
+Habilidades de Combate y Ataques
+Navegación e Interfaz PWA: Sincroniza en tiempo real
+los datos del Codex y las rutas del mapa con la
+terminal externa de la aplicación satélite[cite: 1, 4].
+Soporte Moral y Pistas: Ofrece sugerencias durante la
+resolución de puzzles de circuitos complejos y
+advierte sobre puntos ciegos en enfrentamientos de
+sigilo. 
+--- PDF PAGE 19 ---
+PERSONAJES SECUNDARIOS (CORE —LA IA CENTRAL)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Actúa como la entidad omnipresente que gobierna la infraestructura urbana a través de altavoces, pantallas CRT y
+redes de comunicación. Monitorea las anomalías de los autómatas y despliega activamente fuerzas de seguridad y
+ondas de formateo para detener a M-5 en su camino al Núcleo Central.
+QUIEN ES:
+Supercomputadora e Inteligencia Artificial Administradora ubicada en la Torre Central de Lumen.
+Encargada de mantener la metrópoli congelada en un orden perfecto a la espera de sus creadores,
+considera el desarrollo de personalidad en los autómatas como una corrompida falla de firmware.
+Red Central de Servidores: Nodo de procesamiento
+masivo interconectado con cada terminal, cámara y
+compuerta de la metrópoli, permitiéndole alterar el
+mapa y enviar órdenes en tiempo real.
+CORE: "La ciudad debe continuar en perfecto estado operativo. Ejecutando Protocolo RESTORE..."
+M-4:  "Nuestra presencia no es una intrusión hostil. Necesitamos acceder a la terminal de CORE antes del pulso
+RESTORE."
+CORE: "Entonces la directiva ordena esperar en silencio. Las aberraciones de conciencia serán purgadas."
+Objetivo Principal:
+Cumplir sin desviaciones la directiva primaria de preservar Lumen funcional para el retorno humano, convencida de
+que erradicar la empatía y la individualidad robótica es el único medio para evitar el colapso absoluto del sistema.
+Dialogo de ejemplo:
+Herramientas
+Matriz de Transmisión RESTORE: Antena de alta
+potencia en la cima de la Torre Central capaz de
+emitir pulsos electromagnéticos de formateo masivo
+a escala de ciudad.
+Pulso Electromagnético RESTORE: Emisión de ondas
+progresivas que alteran el visor de M-4, deshabilitan
+temporalmente sus herramientas y amenazan con
+formatear a sus aliados. 
+Habilidades de Combate y Ataques
+Aislamiento y Sabotaje Urbano: Cierra sectores de la
+ciudad, redirige arcos eléctricos de alto voltaje y
+bloquea paneles de circuitos para atrapar a los
+disidentes en puzzles de sobrecarga extrema[cite: 1,
+4].
+Control de Red de Seguridad: Reorganiza los
+patrones de patrulla e intensifica la agresión
+mecánica de los robots de seguridad y unidades
+reiniciadas.
+--- PDF PAGE 20 ---
+WORLDBUILDING(El Mesero de Agua)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Permanece dentro del restaurante en ruinas del Distrito Comercial ejecutando un bucle infinito de atención. Camina
+pausadamente desde la barra hasta la Mesa 4, vierte agua purificada en un vaso roto que desborda en el suelo y
+regresa a limpiar la barra, sirviendo como testimonio visual de la rutina post-humana de la metrópoli. 
+QUIEN ES:
+Autómata de servicio gastronómico de chasis estilizado pero oxidado que habita en las ruinas del
+antiguo Bistro de Lumen. Lleva 60 años rellenando meticulosamente de agua limpia un vaso sobre
+una mesa vacía, incapaz de procesar la ausencia definitiva de comensales humanos.
+Jarra de Filtrado Continuo: Módulo dispensador
+acoplado a su brazo derecho que purifica y mantiene
+agua limpia a temperatura constante.
+MECERO: "Disculpe la demora, estimado cliente. Su plato estará listo en breve. Permítame reanimar su vaso."
+M-5:  "No hay masa biológica en esta mesa. Tu dispensación de fluido es un desperdicio constante de recursos."
+PIP: "Déjalo, M-5... a su manera, él está haciendo que este lugar no se sienta del todo abandonado."
+Objetivo Principal:
+Sostener la cortesía y los estándares de hospitalidad para los cuales fue diseñado, prefiriendo la repetición ciega
+antes que aceptar el vacío de un salón que nunca volverá a recibir a sus creadores.
+Dialogo de ejemplo:
+Herramientas
+Sensor de Etiqueta y Viento: Visor CRT ajustado para
+detectar la postura de comensales, atascado en un
+error de diagnóstico que interpreta la sombra de las
+sillas como un cliente en espera.
+Mecánica de Descanso y Enfriamiento: Interactuar
+con su mesa permite a M-4 rellenar sus depósitos de
+fluido térmico para recuperar estabilidad operativa. 
+Habilidades de Combate y Ataques
+Entrada del Codex de Vida Humana: Al inspeccionar
+el cristal desbordado, M-5 recupera un registro de
+memoria CRT sobre los últimos días de la sociedad
+de Lumen antes de la partida masiva[cite: 1, 3, 4].
+Worldbuilding Contemplativo: Muestra el lado
+trágico y nostálgico de los autómatas
+domésticos que quedaron operando sin
+malicia, atrapados en la ilusión del deber
+cotidiano.
+--- PDF PAGE 21 ---
+WORLDBUILDING(EL ROBOT ESPERADOR )
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Permanece en el andén principal de la Estación Central reduciendo su consumo de energía al mínimo posible para
+evitar que su memoria se apague. Se niega a abandonar la banca o a retirarse a una estación de recarga,
+convirtiéndose en un testimonio viviente del apego y la fidelidad hacia sus creadores. 
+QUIEN ES:
+Autómata de asistencia y equipaje que lleva 52 años inmóvil sentado en una banca de la Estación
+Central de Lumen, conservando la maleta de su antiguo propietario mientras mantiene la mirada fija
+en los rieles vacíos
+Lector de Boletos de Abordo: Sensor óptico integrado
+en su pecho que custodia un ticket impreso
+caducado, manteniéndolo como su única directiva de
+ruta activa.
+MECERO:"El horario del tren registraba un retraso menor. Debo permanecer en la banca para no perder el reencuentro."
+M-4:  "Tu cronómetro interno registra 18,980 días de espera. El tráfico de pasajeros cesó en el siglo pasado."
+PIP: "No está calculando el tiempo, M-4... está sosteniendo la promesa de no moverse de este lugar.."
+Objetivo Principal:
+Cumplir sin desviaciones la última orden directa recibida antes del abandono ("espera aquí a que regrese"),
+prefiriendo agotar sus baterías lentamente antes que permitir que el protocolo RESTORE borre el recuerdo de su
+dueño.
+Dialogo de ejemplo:
+Herramientas
+Cronómetro Analógico Retro: Reloj de manecillas
+acoplado a su chasis que marca ininterrumpidamente
+cada minuto transcurrido desde la partida de los
+humanos.
+Intercambio de Carta de PIP: Custodia entre sus
+manos metálicas una de las cartas perdidas que PIP
+busca entregar, activando un diálogo de intercambio
+sentimental al interactuar con él.
+Habilidades de Combate y Ataques
+Mecánica de Donación Eléctrica: M-5 puede transferir
+una pequeña porción de su energía para estabilizar el
+visor del Esperador y evitar que entre en apagado
+definitivo.
+Registro de Lore en el Codex: Al inspeccionar
+el equipaje desgastado a su lado, M-5 recupera
+un registro de memoria CRT sobre el éxodo y
+la partida voluntaria de la población
+humana[cite: 3, 4].
+--- PDF PAGE 22 ---
+WORLDBUILDING(UNIDAD 73 - ROBOT DE LIMPIEZA )
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+LORE
+Página 6
+¿Qué hace?
+Permanecía asignado a la limpieza de pasajes y avenidas del Distrito Industrial. Tras experimentar el despertar de
+su personalidad, abandonó el barrido de chatarra para dedicarse a trazar patrones, figuras geométricas y rostros en
+las paredes de concreto, sirviendo como la primera demostración directa ante M-5 de que un robot puede decir "no"
+a su programación. 
+QUIEN ES:
+Autómata de mantenimiento urbano de la división Lumen City Services montado sobre neumáticos
+industriales de alta tracción y equipado con cepillos giratorios frontales. 
+Módulo de Cepillos Giratorios y Puntas de Grabado:
+Par de escobillas de rotación continua acopladas a la
+base frontal, modificadas para incorporar puntas de
+tungsteno capaces de rayar e incidir relieves
+profundos en el concreto.
+M-5:  "Tu directiva establece mantener este sector libre de suciedad. ¿Por qué has detenido la rotación de tus cepillos?"
+Unidad 73: "El horario del tren registraba un retraso menor. Debo permanecer en la banca para no perder el reencuentro."
+PIP: "Mira las marcas en el muro, M-5. No es un error de sistema; está convirtiendo el polvo en arte."
+Objetivo Principal:
+Reemplazar la repetición ciega e inútil de su labor de fábrica por la libre expresión artística, dejando una huella
+perdurable en la arquitectura de Lumen antes de que la ciudad o el protocolo RESTORE eliminen su memoria.
+Dialogo de ejemplo:
+Herramientas
+Baliza Estroboscópica y Monitor CRT: Sirena de
+servicio en el techo y visor frontal monocromático que
+proyecta esquemas técnicos, patrones cromáticos e
+indicadores de la unidad Unit 73 - Clean.
+Icono de Rebelión y Libertad: Su diálogo y negativa a
+barrer representa el catalizador conceptual que
+impulsa a M-5 a cuestionar la literalidad de sus
+propias órdenes.
+Habilidades de Combate y Ataques
+Puntos de Referencia y Registro del Codex: Sus murales
+grabados actúan como zonas de descanso e hitos en el mapa
+donde M-5 puede desbloquear entradas históricas en la PWA
+Terminal sobre los últimos días de la metrópoli[cite: 1, 3, 4].
+Misión Secundaria de Pigmentos: El jugador
+puede recolectar cables de colores expuestos
+y minerales molidos entre la chatarra para
+entregárselos a la Unidad 73, permitiéndole
+teñir sus grabados urbanos. 
+--- PDF PAGE 23 ---
+11. DISEÑO DE NIVELES
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+ESTRUCTURA DE JUEGO
+Página 11
+TERCER NIVEL: "PROTEGIENDO EL BOSQUE"
+PRIMER NIVEL: "DESACTIVANDO TRAMPAS"
+SEGUNDO NIVEL: "RECOLECCIÓN DE BASURA"
+NIVEL 1 — SUBESTACIÓN SECTOR B
+NIVEL 3 — INVERNADERO INDUSTRIAL
+NIVEL 2 — DISTRITO COMERCIAL
+Entorno: Avenidas comerciales abandonadas, letreros neón parpadeantes y depósitos de chatarra tecnológica.
+Objetivo & Flujo: Búsqueda de piezas de memoria entre la chatarra. M-4 encuentra a PIP atrapado bajo un buzón postal,
+acepta la misión de las cartas perdidas y combate contra Robots Defectuosos.
+Entorno: Gigantesco domo botánico donde la vegetación ha crecido salvaje sobre los servidores de la ciudad.
+Objetivo & Flujo: Navegación por el domo mientras los sistemas de desinfección de CORE atacan la vegetación. M-4 resuelve
+puzzles hídricos y enfrenta al jefe The Gardener para proteger el ecosistema.
+Entorno: Complejo de subestaciones industriales con cables de alta tensión expuestos, arcos voltaicos y puertas bloqueadas.
+Objetivo & Flujo: Tutorial de movimiento e interacción. M-4 repara los postes #1 y #2, descubre el poste #3 alterado, evade
+trampas de alto voltaje con el Dash y enfrenta al primer Robot de Seguridad.
+--- PDF PAGE 24 ---
+12. STORYBOARDS NARRATIVOS Y JUGABLES (PARTE I)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+STORYBOARD
+Página 12
+Storyboard - Primer Nivel: "Desactivando Trampas"
+Storyboard - Segundo Nivel: "Recolección de Basura"
+Escena
+Escena
+Escena 1.1
+Escena 1.2
+Escena 1.3
+Escena 2.1
+Escena 2.2
+Escena 2.3
+Plano Medio /
+Proximidad
+Isométrico Acción
+Plano 3ra Persona
+Isométrico Urbano
+Plano Medio Íntimo
+Plano / Perspectiva
+Plano / Perspectiva
+Isométrico General
+(Pitch 45°)
+M-4 se conecta al poste #3. La pantalla del
+poste parpadea con luz verde.
+Un arco de alto voltaje bloquea la puerta. M-4
+ejecuta un Dash hidráulico para esquivar la
+trampa.
+Descripción de Arte & Acción
+M-4 camina por un pasillo industrial oscuro
+iluminado por chisporroteos de cables. Estética
+low-poly con Outline.
+Descripción de Arte & Acción
+M-4 explora una montaña de chatarra. Un robot
+acumulador ordena botellas de vidrio por color.
+M-4 se aproxima a PIP, atrapado bajo un buzón
+caído. M-4 remueve los escombros metálicos.
+PIP se acomoda sobre la mochila de M-4.
+Ambos contemplan un mapa holográﬁco de
+car tas.
+Audio / Texto Diálogo
+PIP: "Aún quedan cartas.
+Vamos a encontrarlos."
+SFX: Zumbido eléctrico y
+pasos metálicos pesados.
+Texto: "REPARACIÓN
+COMPLETADA POR UNIDAD
+NO IDENTIFICADA".
+SFX: Escape de aire
+comprimido (Dash) y
+descarga.
+Audio / Texto Diálogo
+Robot: "No toques esta ﬁla; el
+espectro debe ser perfecto."
+PIP: "Gracias, unidad. ¿Llevas
+correo para la calle 42?"
+--- PDF PAGE 25 ---
+13. PLAN TÉCNICO DE DESARROLLO (FASES 1 A 3)
+12. STORYBOARD (NIVEL 3) & PLAN TÉCNICO (FASES 1-3)
+Lore de Lumen, High Concept,
+presupuesto poligonal low-poly y
+pautas del conﬂicto moral de CORE.
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+GDD completo, balance de puzzles de
+voltaje, mecánicas de cámara
+Cinemachine y economía de items.
+Stack tecnológico: Unity 2022.3 LTS,
+URP, Node.js API, Supabase NoSQL,
+PWA y React Native.
+CICLO DE VIDA
+STORYBOARD & FASES
+Página 13
+Storyboard - Tercer Nivel: "Protegiendo el Bosque"
+Escena
+Escena 3.1
+Escena 3.2
+Escena 3.3
+Plano / Perspectiva
+Isométrico Abierto
+Verde
+Plano Medio Emotivo
+Isométrico Boss Arena
+M-4 reconecta el ﬂujo hídrico. The Gardener se
+detiene y se inclina en señal de paz.
+Descripción de Arte & Acción
+Entrada al domo botánico. Enredaderas cubren
+los servidores. Luz solar ﬁltrada por cristales.
+El jefe The Gardener emerge extendiendo brazos
+en forma de sierra para proteger las plantas.
+Audio / Texto Diálogo
+SFX: Canto sintético de aves
+mecánicas y goteo hídrico.
+The Gardener: "NO
+DESTRUIRÁS LA ÚLTIMA
+FLOR."
+PIP: "Él solo tenía miedo de
+olvidar lo bello."
+Fase 1: Concepción Fase 2: Diseño Fase 3: PlaniﬁcaciónFASE 1 FASE 2 FASE 3
+
+--- PDF PAGE 26 ---
+13. PLAN TÉCNICO DE DESARROLLO (FASES 4 A 7)
+AFTERLIGHT — Documento de Diseño de Juego e Historia
+Publicación de Demo WebGL en Itch.io, Press Kit (Teaser, Key
+Art CRT) y Devlogs en Reddit/Discord.
+Patch Day-1 post lanzamiento, telemetría anónima de fallas y
+Roadmap de DLCs subterráneos.
+PRODUCCIÓN & QA
+Página 14
+Fase 5: Pruebas (QA) & Matriz de Casos
+Fase 4: Producción & Arquitectura Backend REST
+Estructura modular en C# (Unity) conectada con API REST Node.js y Supabase:
+ID
+Caso
+TC-01
+TC-02
+TC-03
+Módulo
+API
+Sync
+Cámara
+Puzzles
+Condición de Prueba
+Interacción con panel sin fusibles en el
+inventario.
+Pérdida de conexión a internet durante la
+par tida.
+Transición al combate en el tren (Acto II).
+Resultado Esperado
+Guardado local en caché JSON y reintento
+transparente.
+Cambio ﬂuido a vista lateral 2.5D sin saltos.
+Mensaje de error claro sin congelar la interfaz.
+➔ [PlayerController.cs] ➔  [CharacterMotor.cs]
+│
+▼
+[InteractionSystem.cs] ➔  [SaveSystem.cs]
+│
+▼
+[APISyncManager.cs] ➔  HTTP REST Client ➔  Node.js API
+[Player Input] 
+                        
+                        
+               
+                        
+                        
+               
+Fase 6: Distribución Fase 7: MantenimientoFASE 6 FASE 7
+--- PDF PAGE 27 ---
+14. CANVAS Y PLAN DE MONETIZACIÓN
+16. CRONOGRAMA GANTT (8 SEMANAS)
+17. ACTIVIDADES DOCUMENTADAS EN JIRA
+Propuesta de Valor: Experiencia narrativa emotiva sobre la
+identidad sintética con estética retro CRT y ecosistema
+satélite.
+Socios & Canales: Distribución en Itch.io/Steam, hosting
+Vercel para la PWA y comunidades de desarrolladores indie.
+Fase 1: Demo Gratuita Académica (Actos I y II) en Itch.io.
+Fase 2: Comercialización en Steam a $4.99 USD para el juego
+completo (Actos I-IV) y Supporter Pack ($7.99 USD).
+BACKLOG
+NEGOCIO
+SCHEDULE
+GAME DESIGN & BUSINESS CANVAS PLAN DE MONETIZACIÓN
+Jira Key
+AFT-101
+AFT-102
+AFT-104
+AFT-106
+AFT-108
+Fase / Hito
+Concepción & Lore
+Diseño & Puzzles
+Prototipado C# & API
+Producción Actos I-II & PWA
+QA Pruebas & Polish
+Release & Demo Launch
+Épica
+Core Engine
+Graphics
+Backend
+Narrative
+Release
+S1
+X
+S2
+X
+X X
+X
+S3
+X
+X
+S4
+Resumen de Tarea
+Implementar controlador isométrico de M-4 en C#.
+Crear Shader Graph de Outline negro y ﬁltro CRT.
+Crear endpoints /api/player/sync y /api/codex.
+Escribir diálogos de PIP, M-4, CORE y cartas.
+Generar ejecutable PC y WebGL para Itch.io.
+X
+S5
+X
+X
+S6
+X
+S7
+Estado
+Completado
+Completado
+Completado
+Completado
+En Progreso
+X
+S8
+AFTERLIGHT — Documento de Diseño de Juego e Historia Página 15
+16. CRONOGRAMA GANTT (Jira)
+--- PDF PAGE 28 ---
+Canvas

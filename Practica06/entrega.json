@@ -1,0 +1,35 @@
+[
+  {
+    "diagram_type": "workflow",
+    "output": "acceso.html",
+    "specification_sha256": "fa807a50c28826d5955efae6dd1664746afbebda9c55c6915d5eb6662a7e2e0d",
+    "artifact_sha256": "048195be9464ec32cf1e7e514aed103a75ad195a5f4b9f12a6d0030dca3323d3",
+    "validation": "9/9 showcase, 0 errors, 0 warnings",
+    "browser_evidence": "passed",
+    "visual_review": "failed",
+    "visual_review_note": "Lectura y conexiones visibles; la composición independiente deja una banda inferior vacía en pantallas grandes. No se declara aprobación perceptual completa.",
+    "correction_rounds": 2
+  },
+  {
+    "diagram_type": "workflow",
+    "output": "jugador.html",
+    "specification_sha256": "8425a6aa0170e79bae76ff6c938ff5a2b05af160625b98e0839181fc338a931b",
+    "artifact_sha256": "2145cc77969fe0afaeeb3081aab10084b6cfa3fe2736537ce4e91faf22a1470c",
+    "validation": "9/9 showcase, 0 errors, 0 warnings",
+    "browser_evidence": "passed",
+    "visual_review": "failed",
+    "visual_review_note": "Lectura y conexiones visibles; la composición independiente deja una banda inferior vacía en pantallas grandes. No se declara aprobación perceptual completa.",
+    "correction_rounds": 0
+  },
+  {
+    "diagram_type": "workflow",
+    "output": "creador.html",
+    "specification_sha256": "20798e111d9b9aee9fd827134257a331a38c590909960eb6378f86129d05a3a9",
+    "artifact_sha256": "b2d17568979b2b926e2b1e181383301be381c704129e37e91a101de50c493a6b",
+    "validation": "9/9 showcase, 0 errors, 0 warnings",
+    "browser_evidence": "passed",
+    "visual_review": "failed",
+    "visual_review_note": "Lectura y conexiones visibles; la composición independiente deja una banda inferior vacía en pantallas grandes. No se declara aprobación perceptual completa.",
+    "correction_rounds": 0
+  }
+]

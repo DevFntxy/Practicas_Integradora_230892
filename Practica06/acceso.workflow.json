@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Epic móvil · Acceso compartido",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "ruta",
+      "label": "Acceso compartido"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "C01",
+      "lane": "ruta",
+      "col": 0,
+      "type": "frontend",
+      "label": "Bienvenida",
+      "width": 120
+    },
+    {
+      "id": "C02",
+      "lane": "ruta",
+      "col": 1,
+      "type": "frontend",
+      "label": "Iniciar sesión",
+      "width": 120
+    },
+    {
+      "id": "C03",
+      "lane": "ruta",
+      "col": 2,
+      "type": "frontend",
+      "label": "Crear cuenta",
+      "width": 120
+    },
+    {
+      "id": "C04",
+      "lane": "ruta",
+      "col": 3,
+      "type": "frontend",
+      "label": "Verificar cuenta",
+      "width": 129
+    },
+    {
+      "id": "C05",
+      "lane": "ruta",
+      "col": 4,
+      "type": "frontend",
+      "label": "Recuperar acceso",
+      "width": 129
+    },
+    {
+      "id": "C06",
+      "lane": "ruta",
+      "col": 5,
+      "type": "frontend",
+      "label": "Elegir rol",
+      "width": 120
+    }
+  ],
+  "edges": [
+    {
+      "from": "C01",
+      "to": "C02",
+      "label": "Entrar"
+    },
+    {
+      "from": "C02",
+      "to": "C03",
+      "label": "Registrarse"
+    },
+    {
+      "from": "C03",
+      "to": "C04",
+      "label": "Crear cuenta"
+    },
+    {
+      "from": "C02",
+      "to": "C05",
+      "label": "Recuperar"
+    },
+    {
+      "from": "C04",
+      "to": "C06",
+      "label": "Verificado"
+    },
+    {
+      "from": "C05",
+      "to": "C02",
+      "label": "Restablecido"
+    },
+    {
+      "from": "C02",
+      "to": "C06",
+      "label": "Acceso válido"
+    }
+  ],
+  "mainPath": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Continuación por rol",
+      "items": [
+        "C06 → J01: jugador · C06 → D01: creador autorizado",
+        "Los IDs enlazan este flujo con las imágenes del catálogo."
+      ]
+    }
+  ]
+}

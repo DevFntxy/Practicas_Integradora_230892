@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164d48">
+  <meta name="description" content="Explora el modelo de negocio de AFTERLIGHT, un proyecto de Dimatrek Services.">
+  <title>AFTERLIGHT · Business Model Canvas · Dimatrek</title>
+  <link rel="stylesheet" href="canvas-dimatrek/css/styles.css">
+  <script src="canvas-dimatrek/js/illustrations.js" defer></script>
+  <script src="canvas-dimatrek/js/app.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#canvas">Ir al Canvas</a>
+  <main class="workspace">
+    <header class="masthead">
+      <div class="brand">
+        <img class="brand-logo" src="canvas-dimatrek/dimatrek_logo.png" alt="Logotipo de Dimatrek Services" width="154" height="50">
+        <div><h1>Dimatrek Services <span>/ AFTERLIGHT</span></h1><p>Business Model Canvas</p></div>
+      </div>
+      <a class="source-button" href="canvas-dimatrek/LUMEN%20-%20Equipo%20Mati.pdf" target="_blank" rel="noopener">Documento fuente <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="status-dot"></span> UNIVERSO LUMEN · PROYECTO UNIVERSITARIO</p>
+        <h2 id="intro-title">Un mundo sin humanos.<br><em>Una historia con propósito.</em></h2>
+        <p class="intro-description">El modelo detrás de AFTERLIGHT: una aventura de exploración, puzzles e identidad sintética, conectada a un ecosistema web y móvil.</p>
+      </div>
+      <div class="project-facts" aria-label="Alcance del proyecto según el documento">
+        <div><strong>08</strong><span>semanas de desarrollo</span></div>
+        <div><strong>3D</strong><span>aventura isométrica</span></div>
+        <div><strong>PC + Web</strong><span>plataformas previstas</span></div>
+      </div>
+    </section>
+
+    <section class="canvas-section" aria-labelledby="canvas-title">
+      <div class="canvas-toolbar">
+        <div><p class="eyebrow">EL PROYECTO, EN UNA MIRADA</p><h2 id="canvas-title">Mapa del modelo de negocio</h2></div>
+        <div class="canvas-actions"><button id="motion-toggle" class="motion-toggle" aria-pressed="false">Pausar animaciones</button><p class="explore-hint"><span aria-hidden="true">↗</span> Selecciona un bloque para explorar</p></div>
+      </div>
+      <div id="canvas" class="canvas" tabindex="-1"></div>
+      <noscript><p>Activa JavaScript para explorar los nueve bloques del Canvas. Puedes consultar la información en el documento fuente.</p></noscript>
+      <div class="canvas-bottom"><p><span class="legend-dot"></span> Contenido del GDD <span class="legend-dot outline"></span> Por definir en el documento</p><p id="exploration-status" aria-live="polite">0 de 9 bloques explorados</p></div>
+    </section>
+
+    <footer class="footer"><p><strong>AFTERLIGHT</strong><span>Diseñado para explorar. Construido con propósito.</span></p><button id="source-notes" class="text-button">Criterios y fuentes <span aria-hidden="true">↗</span></button></footer>
+  </main>
+
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title">
+    <div class="dialog-shell">
+      <div class="dialog-top"><span id="detail-category" class="eyebrow"></span><button class="icon-button close-dialog" aria-label="Cerrar detalle">×</button></div>
+      <div id="detail-content"></div>
+      <nav class="detail-nav" aria-label="Explorar bloques"><button id="previous-section" class="nav-button">← Anterior</button><span id="detail-position"></span><button id="next-section" class="nav-button">Siguiente →</button></nav>
+    </div>
+  </dialog>
+
+  <dialog id="image-dialog" class="image-dialog" aria-labelledby="image-caption">
+    <div class="image-toolbar"><span id="image-count"></span><button class="icon-button" id="close-image" aria-label="Cerrar imagen">×</button></div>
+    <div class="image-stage"><button id="previous-image" class="icon-button" aria-label="Imagen anterior">←</button><img id="full-image" alt=""><button id="next-image" class="icon-button" aria-label="Imagen siguiente">→</button></div>
+    <p id="image-caption"></p>
+  </dialog>
+</body>
+</html>

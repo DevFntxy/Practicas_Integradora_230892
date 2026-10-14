@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {"title": "AFTERLIGHT · Roles del proyecto Lumen", "quality_profile": "showcase", "viewBox": [1200, 760]},
+  "components": [
+    {"id":"direccion","type":"backend","label":"Dirección y Game Design","sublabel":"Mecánicas, puzzles y backlog Jira","pos":[430,40],"size":[340,85]},
+    {"id":"narrativa","type":"backend","label":"Diseño narrativo y guion","sublabel":"Lore, diálogos, misiones y Codex","pos":[40,220],"size":[340,85]},
+    {"id":"gameplay","type":"backend","label":"Desarrollo de gameplay","sublabel":"C# / Unity, cámaras e IA","pos":[40,450],"size":[340,85]},
+    {"id":"lumen","type":"frontend","label":"AFTERLIGHT · LUMEN","sublabel":"Videojuego y ecosistema satélite","pos":[440,330],"size":[320,90]},
+    {"id":"arte","type":"backend","label":"Arte 3D y arte técnico","sublabel":"Modelado, animación y shaders","pos":[820,220],"size":[340,85]},
+    {"id":"backend","type":"backend","label":"Backend y Cloud","sublabel":"API REST y base de datos","pos":[820,450],"size":[340,85]},
+    {"id":"jugador","type":"external","label":"Jugador","sublabel":"Explora, resuelve puzzles y decide","pos":[430,640],"size":[340,85]}
+  ],
+  "connections": [
+    {"from":"direccion","to":"lumen"},
+    {"from":"narrativa","to":"lumen"},
+    {"from":"gameplay","to":"lumen"},
+    {"from":"arte","to":"lumen"},
+    {"from":"backend","to":"lumen"},
+    {"from":"jugador","to":"lumen","variant":"emphasis"}
+  ]
+}

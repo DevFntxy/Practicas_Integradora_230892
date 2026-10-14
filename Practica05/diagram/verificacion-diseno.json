@@ -1,0 +1,154 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "scrollHeight": 900,
+    "roles": [
+      {
+        "text": "Director / Game Designer",
+        "x": 526,
+        "width": 252.00550842285156
+      },
+      {
+        "text": "Diseño narrativo / Guion",
+        "x": 180,
+        "width": 243.52113342285156
+      },
+      {
+        "text": "Gameplay Developer",
+        "x": 180,
+        "width": 205.71749877929688
+      },
+      {
+        "text": "3D / Technical Artist",
+        "x": 920.0000610351562,
+        "width": 200.818115234375
+      },
+      {
+        "text": "Backend / Cloud Engineer",
+        "x": 920.0000610351562,
+        "width": 254.8549041748047
+      },
+      {
+        "text": "Jugador",
+        "x": 526,
+        "width": 81.18270874023438
+      }
+    ]
+  },
+  {
+    "width": 1600,
+    "height": 1000,
+    "scrollWidth": 1600,
+    "scrollHeight": 1000,
+    "roles": [
+      {
+        "text": "Director / Game Designer",
+        "x": 525.9999389648438,
+        "width": 252.11056518554688
+      },
+      {
+        "text": "Diseño narrativo / Guion",
+        "x": 180,
+        "width": 243.5491485595703
+      },
+      {
+        "text": "Gameplay Developer",
+        "x": 180,
+        "width": 205.8142852783203
+      },
+      {
+        "text": "3D / Technical Artist",
+        "x": 919.9999389648438,
+        "width": 200.91400146484375
+      },
+      {
+        "text": "Backend / Cloud Engineer",
+        "x": 919.9999389648438,
+        "width": 254.96047973632812
+      },
+      {
+        "text": "Jugador",
+        "x": 525.9999389648438,
+        "width": 81.25732421875
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollHeight": 1080,
+    "roles": [
+      {
+        "text": "Director / Game Designer",
+        "x": 526,
+        "width": 252.33766174316406
+      },
+      {
+        "text": "Diseño narrativo / Guion",
+        "x": 180.00001525878906,
+        "width": 243.56103515625
+      },
+      {
+        "text": "Gameplay Developer",
+        "x": 180.00001525878906,
+        "width": 206.04129028320312
+      },
+      {
+        "text": "3D / Technical Artist",
+        "x": 920,
+        "width": 200.21080017089844
+      },
+      {
+        "text": "Backend / Cloud Engineer",
+        "x": 920,
+        "width": 255.18753051757812
+      },
+      {
+        "text": "Jugador",
+        "x": 526,
+        "width": 81.4840316772461
+      }
+    ]
+  },
+  {
+    "width": 2048,
+    "height": 1320,
+    "scrollWidth": 2048,
+    "scrollHeight": 1320,
+    "roles": [
+      {
+        "text": "Director / Game Designer",
+        "x": 526,
+        "width": 252.1021270751953
+      },
+      {
+        "text": "Diseño narrativo / Guion",
+        "x": 180,
+        "width": 243.56130981445312
+      },
+      {
+        "text": "Gameplay Developer",
+        "x": 180,
+        "width": 205.80380249023438
+      },
+      {
+        "text": "3D / Technical Artist",
+        "x": 919.9999389648438,
+        "width": 200.14859008789062
+      },
+      {
+        "text": "Backend / Cloud Engineer",
+        "x": 919.9999389648438,
+        "width": 254.95216369628906
+      },
+      {
+        "text": "Jugador",
+        "x": 526,
+        "width": 81.2413330078125
+      }
+    ]
+  }
+]

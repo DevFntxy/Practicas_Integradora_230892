@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Transformar el modelo CANVAS de la [Práctica 03](../Practica03/README.md) en una experiencia móvil con dos roles y al menos 15 pantallas. Se entregan **18 pantallas únicas: 6 compartidas, 6 de jugador y 6 de desarrollador/creador**, cada una con imagen SVG editable y PNG de 360 × 720 píxeles.
+Transformar el modelo CANVAS de la [Práctica 03](../../Practica03/README.md) en una experiencia móvil con dos roles y al menos 15 pantallas. Se entregan **18 pantallas únicas: 6 compartidas, 6 de jugador y 6 de desarrollador/creador**, cada una con imagen SVG editable y PNG de 360 × 720 píxeles.
 
 ## Abrir la entrega
 
@@ -12,9 +12,9 @@ El selector **Móvil / Desktop** cambia las imágenes del catálogo y del protot
 
 Las imágenes de escritorio están en [imagenes/desktop](imagenes/desktop), a **1280 × 860 píxeles**. Incluyen acceso en dos columnas, navegación lateral, catálogo con área visual y panel del creador con tarjetas de resumen. La propuesta desktop utiliza PC como plataforma de ejemplo. En el prototipo puedes descargar el SVG o PNG del formato seleccionado.
 
-Para regenerar los SVG desktop, ejecuta `node Practica06/generar-desktop.mjs`. El script `verificar.mjs` exporta también los PNG desktop y verifica sus recorridos, destinos, cambio de formato y conservación del historial. Sus resultados se guardan en `verificacion-desktop.json`.
+Para regenerar los SVG desktop, ejecuta `node Practica06/diagrama/generar-desktop.mjs`. El script `verificar.mjs` exporta también los PNG desktop y verifica sus recorridos, destinos, cambio de formato y conservación del historial. Sus resultados se guardan en `verificacion-desktop.json`.
 
-Abre [index.html](index.html) directamente en Chrome o Edge. No requiere instalación ni conexión a internet. Conserva la carpeta completa para cargar sus imágenes y diagramas.
+Abre [index.html](../index.html) directamente en Chrome o Edge. No requiere instalación ni conexión a internet. Conserva la carpeta completa para cargar sus imágenes y diagramas.
 
 1. **Secuencia visual:** catálogo de los 18 sketches con códigos estables.
 2. **Probar recorrido:** selecciona una pantalla y utiliza sus acciones para avanzar, cancelar, regresar o cambiar de rol.
@@ -81,9 +81,9 @@ Los diagramas Archify muestran las rutas principales y el acceso compartido; el 
 Ejemplo desde la raíz del repositorio:
 
 ```powershell
-node C:/Users/derek/.agents/skills/archify/bin/archify.mjs validate workflow Practica06/acceso.workflow.json --quality showcase --json
-node C:/Users/derek/.agents/skills/archify/bin/archify.mjs deliver workflow Practica06/acceso.workflow.json Practica06/acceso.html --quality showcase --json
-node C:/Users/derek/.agents/skills/archify/bin/archify.mjs visual-check Practica06/acceso.html --json
+node C:/Users/derek/.agents/skills/archify/bin/archify.mjs validate workflow Practica06/diagrama/acceso.workflow.json --quality showcase --json
+node C:/Users/derek/.agents/skills/archify/bin/archify.mjs deliver workflow Practica06/diagrama/acceso.workflow.json Practica06/diagrama/acceso.html --quality showcase --json
+node C:/Users/derek/.agents/skills/archify/bin/archify.mjs visual-check Practica06/diagrama/acceso.html --json
 ```
 
 ## Verificación y límites

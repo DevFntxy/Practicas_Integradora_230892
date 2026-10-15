@@ -10,7 +10,7 @@ document.head.append(style);
 const pngLink=document.createElement('a');pngLink.id='download-png';pngLink.className='download-png';pngLink.download='';pngLink.textContent='Descargar PNG ↓';$('download').after(pngLink);
 const originalShow=show;
 function refreshDevice(){
- const folder=deviceMode==='desktop'?'imagenes/desktop/':'imagenes/';
+ const folder=deviceMode==='desktop'?'./diagrama/imagenes/desktop/':'./diagrama/imagenes/';
  document.body.dataset.device=deviceMode;
  document.querySelectorAll('#lanes .screen').forEach(card=>{const img=card.querySelector('img');const id=img.getAttribute('src').split('/').pop().replace('.svg','');img.src=folder+id+'.svg';img.alt=`${deviceMode==='desktop'?'Desktop':'Móvil'} ${id}: ${SCREENS.find(s=>s.id===id).title}`;});
  $('phone').src=folder+current+'.svg';$('phone').alt=`${deviceMode==='desktop'?'Desktop':'Móvil'} ${current}: ${SCREENS.find(s=>s.id===current).title}`;
